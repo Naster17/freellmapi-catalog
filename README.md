@@ -2,9 +2,21 @@
 
 Static catalog feed for FreeLLMAPI.
 
-Upload the contents of this folder to the GitHub Pages repository served at:
+Repository:
+
+`https://github.com/Naster17/freellmapi-catalog`
+
+Upload the contents of this folder to that repository and serve it with GitHub Pages at:
 
 `https://naster17.github.io/freellmapi-catalog`
+
+The FreeLLMAPI UI labels this source as `naster17.com`; until the domain is attached, the app still fetches from the GitHub Pages URL above.
+
+GitHub Pages settings:
+
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/ (root)`
 
 Required endpoint:
 

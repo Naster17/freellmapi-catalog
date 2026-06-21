@@ -1,6 +1,6 @@
 {
-  "version": "2026.06.21",
-  "generatedAt": "2026-06-21T09:57:11.658Z",
+  "version": "2026.06.21.1",
+  "generatedAt": "2026-06-21T11:12:40.994Z",
   "tier": "monthly",
   "counts": {
     "platforms": 16,
@@ -424,7 +424,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "promo (trial)",
+      "monthlyTokenBudget": "~6M",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -625,7 +625,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "promo (trial)",
+      "monthlyTokenBudget": "~6M",
       "contextWindow": 256000,
       "maxOutputTokens": 64000,
       "enabled": true,
@@ -720,7 +720,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "promo (trial)",
+      "monthlyTokenBudget": "~6M",
       "contextWindow": 1000000,
       "maxOutputTokens": 128000,
       "enabled": true,
@@ -851,7 +851,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "promo (trial)",
+      "monthlyTokenBudget": "~6M",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -1133,7 +1133,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "promo (trial)",
+      "monthlyTokenBudget": "~6M",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
