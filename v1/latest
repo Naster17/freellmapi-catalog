@@ -1,11 +1,11 @@
 {
   "version": "2026.06.21.1",
-  "generatedAt": "2026-06-21T11:12:40.995Z",
+  "generatedAt": "2026-06-21T11:12:40.994Z",
   "tier": "monthly",
   "counts": {
     "platforms": 16,
-    "models": 93,
-    "enabledModels": 93,
+    "models": 96,
+    "enabledModels": 96,
     "quirks": 12
   },
   "platforms": [
@@ -253,6 +253,33 @@
       "contextWindow": 196608,
       "enabled": true,
       "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "nvidia-rate-limited",
+          "title": "Recurring free, 40 RPM, eval-only ToS",
+          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "nvidia",
+      "modelId": "minimaxai/minimax-m3",
+      "displayName": "MiniMax M3 (NV)",
+      "intelligenceRank": 3,
+      "speedRank": 9,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 40,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 40 RPM",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": [
         {
@@ -1801,6 +1828,61 @@
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "nvidia-rate-limited",
+          "title": "Recurring free, 40 RPM, eval-only ToS",
+          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "nvidia",
+      "modelId": "nvidia/nemotron-3-ultra-550b-a55b",
+      "displayName": "Nemotron 3 Ultra 550B (NV)",
+      "intelligenceRank": 1,
+      "speedRank": 12,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 40,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 40 RPM",
+      "contextWindow": 1048576,
+      "maxOutputTokens": 16384,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "nvidia-rate-limited",
+          "title": "Recurring free, 40 RPM, eval-only ToS",
+          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "nvidia",
+      "modelId": "stepfun-ai/step-3.7-flash",
+      "displayName": "Step 3.7 Flash (NV)",
+      "intelligenceRank": 4,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 40,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 40 RPM",
+      "contextWindow": 262144,
+      "enabled": true,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": [
         {
