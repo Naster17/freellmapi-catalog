@@ -1,6 +1,6 @@
 {
-  "version": "2026.06.21.2",
-  "generatedAt": "2026-06-21T13:00:00.000Z",
+  "version": "2026.06.27.1",
+  "generatedAt": "2026-06-27T12:00:00.000Z",
   "tier": "monthly",
   "counts": {
     "platforms": 16,
@@ -882,7 +882,7 @@
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "zen-promo-roster",
@@ -1163,8 +1163,8 @@
       "monthlyTokenBudget": "~6M",
       "contextWindow": 131072,
       "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
+      "supportsVision": true,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "zen-promo-roster",
