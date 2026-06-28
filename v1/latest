@@ -1,6 +1,6 @@
 {
-  "version": "2026.06.27.1",
-  "generatedAt": "2026-06-27T12:00:00.000Z",
+  "version": "2026.06.28.1",
+  "generatedAt": "2026-06-28T12:00:00.000Z",
   "tier": "monthly",
   "counts": {
     "platforms": 16,
@@ -91,7 +91,7 @@
       "monthlyTokenBudget": "~10-20M",
       "contextWindow": 262144,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": [
         {
@@ -185,7 +185,7 @@
       "monthlyTokenBudget": "~1-3M",
       "contextWindow": 262144,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -405,7 +405,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~1-3M",
-      "contextWindow": 131072,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -526,7 +526,7 @@
         "tpd": 1000000
       },
       "monthlyTokenBudget": "~30M",
-      "contextWindow": 131072,
+      "contextWindow": 65536,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -546,7 +546,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~18-45M",
-      "contextWindow": 131072,
+      "contextWindow": 128000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -613,7 +613,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~5-10M",
-      "contextWindow": 131072,
+      "contextWindow": 198008,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -721,7 +721,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~18-45M",
-      "contextWindow": 131072,
+      "contextWindow": 32768,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -798,7 +798,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~3-5M",
-      "contextWindow": 131072,
+      "contextWindow": 80000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -825,10 +825,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~5-10M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "cloudflare-key-format",
@@ -955,7 +955,7 @@
       "monthlyTokenBudget": "~18-45M",
       "contextWindow": 131072,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": [
         {
@@ -1047,10 +1047,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~6M",
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
@@ -1101,9 +1101,9 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -1121,9 +1121,9 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 131072,
+      "contextWindow": 256000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -1141,9 +1141,9 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -1215,7 +1215,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 256000,
+      "contextWindow": 128000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1235,7 +1235,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1550,7 +1550,7 @@
         "tpd": 1000000
       },
       "monthlyTokenBudget": "~30M",
-      "contextWindow": 131072,
+      "contextWindow": 204800,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1570,10 +1570,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~30M",
-      "contextWindow": 32768,
+      "contextWindow": 262144,
       "enabled": true,
       "supportsVision": true,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": []
     },
     {
@@ -1612,8 +1612,8 @@
       "monthlyTokenBudget": "~6M",
       "contextWindow": 262144,
       "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
+      "supportsVision": true,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
@@ -1677,10 +1677,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~30M",
-      "contextWindow": 32768,
+      "contextWindow": 262144,
       "enabled": true,
       "supportsVision": true,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": []
     },
     {
@@ -1699,7 +1699,7 @@
       "monthlyTokenBudget": "~50-100M",
       "contextWindow": 131072,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -1744,10 +1744,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~10-20M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
+      "supportsVision": true,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "cloudflare-key-format",
@@ -1771,7 +1771,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~2-3M (200/hr)",
-      "contextWindow": 262144,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1907,7 +1907,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~20-30M",
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": false,
@@ -1929,8 +1929,8 @@
       "monthlyTokenBudget": "~6M",
       "contextWindow": 262144,
       "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
+      "supportsVision": true,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
@@ -1981,10 +1981,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~6M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
@@ -2008,10 +2008,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~6M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
+      "supportsVision": true,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
@@ -2055,7 +2055,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~18M",
-      "contextWindow": 8000,
+      "contextWindow": 128000,
       "enabled": true,
       "supportsVision": true,
       "supportsTools": true,
@@ -2149,10 +2149,10 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~6M",
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
@@ -2176,7 +2176,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~1-2M",
-      "contextWindow": 131072,
+      "contextWindow": 256000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -2236,9 +2236,9 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -2259,7 +2259,7 @@
       "contextWindow": 128000,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
@@ -2286,7 +2286,7 @@
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "cloudflare-key-format",
@@ -2340,7 +2340,7 @@
       "contextWindow": 32768,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": false,
+      "supportsTools": true,
       "quirks": [
         {
           "slug": "or-free-cap-account-wide",
