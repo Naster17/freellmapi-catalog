@@ -1,14 +1,18 @@
 {
-  "version": "2026.06.29.1",
-  "generatedAt": "2026-06-29T00:00:00.000Z",
+  "version": "2026.06.29.2",
+  "generatedAt": "2026-06-29T17:34:54.980Z",
   "tier": "monthly",
   "counts": {
-    "platforms": 16,
-    "models": 96,
-    "enabledModels": 96,
-    "quirks": 12
+    "platforms": 17,
+    "models": 100,
+    "enabledModels": 100,
+    "quirks": 15
   },
   "platforms": [
+    {
+      "id": "agnes",
+      "name": "Agnes AI"
+    },
     {
       "id": "cerebras",
       "name": "Cerebras"
@@ -2376,6 +2380,126 @@
           "severity": "info"
         }
       ]
+    },
+    {
+      "platform": "agnes",
+      "modelId": "agnes-2.0-flash",
+      "displayName": "Agnes 2.0 Flash",
+      "intelligenceRank": 7,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 20,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~50-100M",
+      "contextWindow": 524288,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "modality": "text",
+      "quirks": [
+        {
+          "slug": "agnes-free-tier",
+          "title": "20 RPM free tier, $0 list price",
+          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
+          "severity": "info"
+        },
+        {
+          "slug": "agnes-vision-hangs",
+          "title": "Vision via image_url may hang",
+          "body": "The doc claims agnes-2.0-flash supports image understanding via image_url, but live tests through this proxy have hung past 60s on a 280px PNG. Treat supportsVision=true as aspirational; plan for fallback or direct API calls if vision is load-bearing.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "agnes",
+      "modelId": "agnes-1.5-flash",
+      "displayName": "Agnes 1.5 Flash",
+      "intelligenceRank": 9,
+      "speedRank": 3,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 20,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~50-100M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "modality": "text",
+      "quirks": [
+        {
+          "slug": "agnes-free-tier",
+          "title": "20 RPM free tier, $0 list price",
+          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "agnes",
+      "modelId": "agnes-image-2.0-flash",
+      "displayName": "Agnes Image 2.0 Flash",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 20,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~50-100M",
+      "contextWindow": null,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "modality": "image",
+      "mediaNote": "Free - 1K/2K up to 20/10 RPM, 3K/4K 1 RPM",
+      "quirks": [
+        {
+          "slug": "agnes-free-tier",
+          "title": "20 RPM free tier, $0 list price",
+          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "agnes",
+      "modelId": "agnes-image-2.1-flash",
+      "displayName": "Agnes Image 2.1 Flash",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 20,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~50-100M",
+      "contextWindow": null,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "modality": "image",
+      "mediaNote": "Free - 1K/2K up to 20/10 RPM, high-density optimized",
+      "quirks": [
+        {
+          "slug": "agnes-free-tier",
+          "title": "20 RPM free tier, $0 list price",
+          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
+          "severity": "info"
+        }
+      ]
     }
   ],
   "quirks": [
@@ -2532,6 +2656,42 @@
         {
           "platform": "siliconflow",
           "modelGlob": null
+        }
+      ]
+    },
+    {
+      "slug": "agnes-free-tier",
+      "title": "20 RPM free tier, $0 list price",
+      "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
+      "severity": "info",
+      "targets": [
+        {
+          "platform": "agnes",
+          "modelGlob": null
+        }
+      ]
+    },
+    {
+      "slug": "agnes-vision-hangs",
+      "title": "Vision via image_url may hang",
+      "body": "The doc claims agnes-2.0-flash supports image understanding via image_url, but live tests through this proxy have hung past 60s on a 280px PNG. Treat supportsVision=true as aspirational; plan for fallback or direct API calls if vision is load-bearing.",
+      "severity": "warning",
+      "targets": [
+        {
+          "platform": "agnes",
+          "modelGlob": "agnes-2.0-flash"
+        }
+      ]
+    },
+    {
+      "slug": "agnes-video-not-routed",
+      "title": "agnes-video-v2.0 not yet routed",
+      "body": "Agnes exposes agnes-video-v2.0 (text-to-video, image-to-video, multi-image, keyframes) at POST /v1/videos with an async task model returning video_id. This gateway does not yet ship a video adapter, so the model is intentionally not in the catalog. Use the direct endpoint at apihub.agnes-ai.com/v1/videos until the video route lands.",
+      "severity": "info",
+      "targets": [
+        {
+          "platform": "agnes",
+          "modelGlob": "*video*"
         }
       ]
     }
