@@ -1,6 +1,6 @@
 {
-  "version": "2026.06.28.2",
-  "generatedAt": "2026-06-28T14:30:00.000Z",
+  "version": "2026.06.29.1",
+  "generatedAt": "2026-06-29T00:00:00.000Z",
   "tier": "monthly",
   "counts": {
     "platforms": 16,
@@ -452,7 +452,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 131072,
+      "contextWindow": 204800,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -879,7 +879,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 131072,
+      "contextWindow": 204800,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1161,7 +1161,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 131072,
+      "contextWindow": 204800,
       "enabled": true,
       "supportsVision": true,
       "supportsTools": true,
