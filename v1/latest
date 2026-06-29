@@ -1,12 +1,12 @@
 {
-  "version": "2026.06.29.2",
-  "generatedAt": "2026-06-29T17:34:54.980Z",
+  "version": "2026.06.29.3",
+  "generatedAt": "2026-06-29T21:52:16.922266+00:00",
   "tier": "monthly",
   "counts": {
-    "platforms": 17,
-    "models": 100,
-    "enabledModels": 100,
-    "quirks": 15
+    "platforms": 18,
+    "models": 112,
+    "enabledModels": 111,
+    "quirks": 18
   },
   "platforms": [
     {
@@ -72,6 +72,10 @@
     {
       "id": "pollinations",
       "name": "Pollinations"
+    },
+    {
+      "id": "routeway",
+      "name": "Routeway"
     },
     {
       "id": "zhipu",
@@ -148,7 +152,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -226,7 +230,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -253,7 +257,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 196608,
       "enabled": true,
       "supportsVision": false,
@@ -280,7 +284,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": true,
@@ -307,7 +311,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -334,7 +338,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -390,7 +394,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -428,7 +432,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -482,7 +486,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 200000,
       "enabled": true,
       "supportsVision": false,
@@ -686,7 +690,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -783,7 +787,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -929,7 +933,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": true,
@@ -1023,7 +1027,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 200/hr per IP",
+      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -1032,7 +1036,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -1059,7 +1063,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1077,7 +1081,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 200/hr per IP",
+      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -1086,7 +1090,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -1200,7 +1204,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -1305,7 +1309,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -1332,7 +1336,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -1368,7 +1372,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1395,7 +1399,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1502,7 +1506,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1529,13 +1533,13 @@
         {
           "slug": "pollinations-degraded",
           "title": "Anon tier degraded (1 concurrent)",
-          "body": "Pollinations’ legacy text API is deprecated for authenticated users (replacement enter.pollinations.ai is pay-as-you-go), but anonymous access is explicitly unaffected. Anon is queue-limited to 1 concurrent request per IP and serves a single model (openai-fast); expect 429 \"Queue full\" under any parallelism. Live-probed 2026-06-10.",
+          "body": "Pollinations\u2019 legacy text API is deprecated for authenticated users (replacement enter.pollinations.ai is pay-as-you-go), but anonymous access is explicitly unaffected. Anon is queue-limited to 1 concurrent request per IP and serves a single model (openai-fast); expect 429 \"Queue full\" under any parallelism. Live-probed 2026-06-10.",
           "severity": "warning"
         },
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -1622,7 +1626,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1783,7 +1787,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -1801,7 +1805,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -1828,7 +1832,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -1855,7 +1859,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 1048576,
       "maxOutputTokens": 16384,
       "enabled": true,
@@ -1883,7 +1887,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free · 40 RPM",
+      "monthlyTokenBudget": "free \u00b7 40 RPM",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": true,
@@ -1939,7 +1943,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1966,7 +1970,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1993,7 +1997,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2020,7 +2024,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2087,7 +2091,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2134,7 +2138,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2161,7 +2165,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2268,7 +2272,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2322,7 +2326,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2349,7 +2353,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2376,7 +2380,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2500,6 +2504,267 @@
           "severity": "info"
         }
       ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "llama-3.3-70b-instruct:free",
+      "displayName": "Llama 3.3 70B (RW free)",
+      "intelligenceRank": 15,
+      "speedRank": 9,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "nemotron-nano-9b-v2:free",
+      "displayName": "Nemotron Nano 9B V2 (RW free)",
+      "intelligenceRank": 18,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 128000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "step-3.5-flash:free",
+      "displayName": "Step 3.5 Flash (RW free)",
+      "intelligenceRank": 17,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 256000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "gpt-oss-120b:free",
+      "displayName": "GPT-OSS 120B (RW free)",
+      "intelligenceRank": 12,
+      "speedRank": 10,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-502-backend",
+          "title": "Currently returning 502",
+          "body": "Upstream backend is down (502 Bad Gateway), verified June 2026. May recover.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "ling-2.6-flash:free",
+      "displayName": "Ling 2.6 Flash (RW free)",
+      "intelligenceRank": 16,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 262144,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-502-backend",
+          "title": "Currently returning 502",
+          "body": "Upstream backend is down (502 Bad Gateway), verified June 2026. May recover.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "gemma-4-31b-it:free",
+      "displayName": "Gemma 4 31B (RW free)",
+      "intelligenceRank": 14,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 262144,
+      "enabled": false,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-premium-only",
+          "title": "Premium-only despite :free suffix",
+          "body": "Returns 402 'exclusive model for premium users'. The :free suffix is misleading \u2014 requires a paid subscription.",
+          "severity": "blocker"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "llama-3.1-8b-instruct:free",
+      "displayName": "Llama 3.1 8B (RW free)",
+      "intelligenceRank": 22,
+      "speedRank": 8,
+      "sizeLabel": "Small",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 16384,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "llama-3.2-1b-instruct:free",
+      "displayName": "Llama 3.2 1B (RW free)",
+      "intelligenceRank": 28,
+      "speedRank": 8,
+      "sizeLabel": "Small",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 16384,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "llama-3.2-3b-instruct:free",
+      "displayName": "Llama 3.2 3B (RW free)",
+      "intelligenceRank": 25,
+      "speedRank": 8,
+      "sizeLabel": "Small",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 16384,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "nemotron-3-nano-30b-a3b:free",
+      "displayName": "Nemotron 3 Nano 30B (RW free)",
+      "intelligenceRank": 16,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 256000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "laguna-m.1:free",
+      "displayName": "Laguna M.1 (RW free)",
+      "intelligenceRank": 17,
+      "speedRank": 8,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "laguna-xs.2:free",
+      "displayName": "Laguna XS.2 (RW free)",
+      "intelligenceRank": 19,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
     }
   ],
   "quirks": [
@@ -2518,7 +2783,7 @@
     {
       "slug": "keyless-anonymous",
       "title": "No API key required",
-      "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
+      "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
       "severity": "info",
       "targets": [
         {
@@ -2566,7 +2831,7 @@
     {
       "slug": "or-free-cap-account-wide",
       "title": "Daily :free cap is account-wide",
-      "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+      "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
       "severity": "info",
       "targets": [
         {
@@ -2602,7 +2867,7 @@
     {
       "slug": "pollinations-degraded",
       "title": "Anon tier degraded (1 concurrent)",
-      "body": "Pollinations’ legacy text API is deprecated for authenticated users (replacement enter.pollinations.ai is pay-as-you-go), but anonymous access is explicitly unaffected. Anon is queue-limited to 1 concurrent request per IP and serves a single model (openai-fast); expect 429 \"Queue full\" under any parallelism. Live-probed 2026-06-10.",
+      "body": "Pollinations\u2019 legacy text API is deprecated for authenticated users (replacement enter.pollinations.ai is pay-as-you-go), but anonymous access is explicitly unaffected. Anon is queue-limited to 1 concurrent request per IP and serves a single model (openai-fast); expect 429 \"Queue full\" under any parallelism. Live-probed 2026-06-10.",
       "severity": "warning",
       "targets": [
         {
@@ -2626,7 +2891,7 @@
     {
       "slug": "zen-serves-ultra-fast",
       "title": "Zen serves the 550B fast",
-      "body": "OpenCode Zen serves nemotron-3-ultra in ~2s with working tool calls where the OpenRouter route hangs — the live-verified path for this model.",
+      "body": "OpenCode Zen serves nemotron-3-ultra in ~2s with working tool calls where the OpenRouter route hangs \u2014 the live-verified path for this model.",
       "severity": "info",
       "targets": [
         {
@@ -2692,6 +2957,46 @@
         {
           "platform": "agnes",
           "modelGlob": "*video*"
+        }
+      ]
+    },
+    {
+      "slug": "routeway-shared-rate-limit",
+      "title": "5 RPM / 200 RPD shared across all :free models",
+      "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+      "severity": "warning",
+      "targets": [
+        {
+          "platform": "routeway",
+          "modelGlob": "*:free"
+        }
+      ]
+    },
+    {
+      "slug": "routeway-premium-only",
+      "title": "Premium-only despite :free suffix",
+      "body": "Some models with :free suffix (e.g. gemma-4-31b-it:free) return 402 'exclusive model for premium users'. The :free suffix does not guarantee free access.",
+      "severity": "blocker",
+      "targets": [
+        {
+          "platform": "routeway",
+          "modelGlob": "gemma-4-31b-it:free"
+        }
+      ]
+    },
+    {
+      "slug": "routeway-502-backend",
+      "title": "Some backends returning 502",
+      "body": "gpt-oss-120b:free and ling-2.6-flash:free return 502 Bad Gateway. Upstream backend issue, may recover.",
+      "severity": "warning",
+      "targets": [
+        {
+          "platform": "routeway",
+          "modelGlob": "gpt-oss-120b:free"
+        },
+        {
+          "platform": "routeway",
+          "modelGlob": "ling-2.6-flash:free"
         }
       ]
     }
