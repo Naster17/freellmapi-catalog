@@ -476,7 +476,7 @@
     {
       "platform": "nvidia",
       "modelId": "z-ai/glm-5.1",
-      "displayName": "GLM-5.1 (NV, slow cold-start)",
+      "displayName": "GLM-5.1 (NV)",
       "intelligenceRank": 5,
       "speedRank": 9,
       "sizeLabel": "Frontier",
