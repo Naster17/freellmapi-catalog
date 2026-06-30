@@ -44,8 +44,15 @@ const updated = updateCatalog(raw, newVersion);
 writeFileSync(LATEST_PATH, updated, 'utf8');
 writeFileSync(LATEST_JSON_PATH, updated, 'utf8');
 
+const hook = process.argv.includes('--hook');
 const push = process.argv.includes('--push');
-if (push) {
+
+if (hook) {
+  process.chdir(CATALOG_DIR);
+  execSync('git add v1/latest latest.json', { stdio: 'inherit' });
+  execSync('git commit --amend --no-edit', { stdio: 'inherit' });
+  console.log(`amended to v${newVersion}`);
+} else if (push) {
   process.chdir(CATALOG_DIR);
   execSync('git add v1/latest latest.json', { stdio: 'inherit' });
   execSync(`git commit -m "catalog: bump to v${newVersion}"`, { stdio: 'inherit' });
