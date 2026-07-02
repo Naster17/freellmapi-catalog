@@ -1,11 +1,11 @@
 {
-  "version": "2026.06.30.2",
-  "generatedAt": "2026-06-30T21:13:00.154Z",
+  "version": "2026.07.02.2",
+  "generatedAt": "2026-07-02T21:59:55.848Z",
   "tier": "monthly",
   "counts": {
-    "platforms": 18,
-    "models": 112,
-    "enabledModels": 111,
+    "platforms": 19,
+    "models": 130,
+    "enabledModels": 129,
     "quirks": 18
   },
   "platforms": [
@@ -20,6 +20,10 @@
     {
       "id": "cloudflare",
       "name": "Cloudflare Workers AI"
+    },
+    {
+      "id": "g4f",
+      "name": "g4f.space"
     },
     {
       "id": "cohere",
@@ -2765,6 +2769,348 @@
       "supportsVision": false,
       "supportsTools": true,
       "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-5.5",
+      "displayName": "GPT-5.5 (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-5.4",
+      "displayName": "GPT-5.4 (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "openai/gpt-5",
+      "displayName": "GPT-5 (g4f)",
+      "intelligenceRank": 9,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-4o-mini",
+      "displayName": "GPT-4o mini (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-oss-120b",
+      "displayName": "GPT-OSS 120B (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "deepseek-v4-pro",
+      "displayName": "DeepSeek V4 Pro (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "kimi-k2.7-code",
+      "displayName": "Kimi K2.7 Coder (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "kimi-k2.6",
+      "displayName": "Kimi K2.6 (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "glm-5.1",
+      "displayName": "GLM 5.1 (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "zai-org/GLM-5.1",
+      "displayName": "GLM 5.1 Modelscope (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "qwen-coder",
+      "displayName": "Qwen Coder (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "qwen3.7-max",
+      "displayName": "Qwen 3.7 Max (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "qwen3.6-plus",
+      "displayName": "Qwen 3.6 Plus (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "minimaxai/minimax-m3",
+      "displayName": "minimax m3 (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gemini-3.1-flash-lite",
+      "displayName": "Gemini 3.1 Flash Lite (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 8,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "zai-org/GLM-5.2",
+      "displayName": "GLM 5.2 Modelscope (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "claude-opus-4-6-thinking",
+      "displayName": "Claude Opus 4.6 Thinking (g4f)",
+      "intelligenceRank": 9,
+      "speedRank": 2,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true
+    },
+    {
+      "platform": "g4f",
+      "modelId": "claude-sonnet-4-6",
+      "displayName": "Claude Sonnet 4.6 (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true
     }
   ],
   "quirks": [
