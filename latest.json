@@ -1,11 +1,11 @@
 {
-  "version": "2026.07.03.4",
-  "generatedAt": "2026-07-03T06:53:49.115Z",
-  "tier": "monthly",
+  "version": "2026.07.03.3",
+  "generatedAt": "2026-07-03T12:46:07.653Z",
+  "tier": "live",
   "counts": {
-    "platforms": 19,
-    "models": 130,
-    "enabledModels": 129,
+    "platforms": 20,
+    "models": 154,
+    "enabledModels": 152,
     "quirks": 18
   },
   "platforms": [
@@ -22,12 +22,16 @@
       "name": "Cloudflare Workers AI"
     },
     {
-      "id": "g4f",
-      "name": "g4f.space"
-    },
-    {
       "id": "cohere",
       "name": "Cohere"
+    },
+    {
+      "id": "freetheai",
+      "name": "FreeTheAi"
+    },
+    {
+      "id": "g4f",
+      "name": "g4f.space"
     },
     {
       "id": "github",
@@ -87,6 +91,33 @@
     }
   ],
   "models": [
+    {
+      "platform": "nvidia",
+      "modelId": "nvidia/nemotron-3-ultra-550b-a55b",
+      "displayName": "Nemotron 3 Ultra 550B (NV)",
+      "intelligenceRank": 1,
+      "speedRank": 12,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 40,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 40 RPM",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "nvidia-rate-limited",
+          "title": "Recurring free, 40 RPM, eval-only ToS",
+          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        }
+      ]
+    },
     {
       "platform": "cloudflare",
       "modelId": "@cf/moonshotai/kimi-k2.6",
@@ -183,26 +214,6 @@
     },
     {
       "platform": "huggingface",
-      "modelId": "moonshotai/Kimi-K2.6",
-      "displayName": "Kimi K2.6 (HF)",
-      "intelligenceRank": 3,
-      "speedRank": 9,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": null,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~1-3M",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "huggingface",
       "modelId": "Qwen/Qwen3-Coder-Next",
       "displayName": "Qwen3-Coder Next (HF)",
       "intelligenceRank": 3,
@@ -218,6 +229,26 @@
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "huggingface",
+      "modelId": "moonshotai/Kimi-K2.6",
+      "displayName": "Kimi K2.6 (HF)",
+      "intelligenceRank": 3,
+      "speedRank": 9,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~1-3M",
+      "contextWindow": 262144,
+      "enabled": true,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -404,6 +435,26 @@
       ]
     },
     {
+      "platform": "freetheai",
+      "modelId": "opc/north-mini-code-free",
+      "displayName": "North Mini Code (FreeTheAi)",
+      "intelligenceRank": 4,
+      "speedRank": 7,
+      "sizeLabel": "Small",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 32768,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
       "platform": "huggingface",
       "modelId": "deepseek-ai/DeepSeek-V4-Flash",
       "displayName": "DeepSeek V4 Flash (HF)",
@@ -451,6 +502,33 @@
       ]
     },
     {
+      "platform": "nvidia",
+      "modelId": "stepfun-ai/step-3.7-flash",
+      "displayName": "Step 3.7 Flash (NV)",
+      "intelligenceRank": 4,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 40,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 40 RPM",
+      "contextWindow": 262144,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "nvidia-rate-limited",
+          "title": "Recurring free, 40 RPM, eval-only ToS",
+          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
       "platform": "opencode",
       "modelId": "deepseek-v4-flash-free",
       "displayName": "DeepSeek V4 Flash Free (OpenCode Zen)",
@@ -478,9 +556,89 @@
       ]
     },
     {
+      "platform": "freetheai",
+      "modelId": "glm/glm-4.5",
+      "displayName": "GLM 4.5 (FreeTheAi)",
+      "intelligenceRank": 5,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "glm/glm-4.5-air",
+      "displayName": "GLM 4.5 Air (FreeTheAi)",
+      "intelligenceRank": 5,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "kai/poolside/laguna-xs-2.1:free",
+      "displayName": "Laguna XS 2.1 (FreeTheAi)",
+      "intelligenceRank": 5,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "kai/stepfun/step-3.7-flash:free",
+      "displayName": "Step 3.7 Flash (FreeTheAi)",
+      "intelligenceRank": 5,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
       "platform": "nvidia",
       "modelId": "z-ai/glm-5.1",
-      "displayName": "GLM-5.1 (NV)",
+      "displayName": "GLM-5.1 (NV, slow cold-start)",
       "intelligenceRank": 5,
       "speedRank": 9,
       "sizeLabel": "Frontier",
@@ -570,6 +728,366 @@
           "severity": "info"
         }
       ]
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "bbl/gemini-2.5-flash-lite",
+      "displayName": "Gemini 2.5 Flash Lite (bbl)",
+      "intelligenceRank": 6,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "bbl/gemini-3.0-flash",
+      "displayName": "Gemini 3.0 Flash (bbl)",
+      "intelligenceRank": 6,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "bbl/gemini-3.1-flash-lite",
+      "displayName": "Gemini 3.1 Flash Lite (bbl)",
+      "intelligenceRank": 6,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "bbl/gemini-3.5-flash",
+      "displayName": "Gemini 3.5 Flash (bbl)",
+      "intelligenceRank": 6,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "bbl/gpt-5.5-mini",
+      "displayName": "GPT-5.5 Mini (bbl)",
+      "intelligenceRank": 6,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 400000,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "bbl/grok-4.1-fast-non-reasoning",
+      "displayName": "Grok 4.1 Fast (bbl)",
+      "intelligenceRank": 6,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "glm/glm-4.6",
+      "displayName": "GLM 4.6 (FreeTheAi)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "glm/glm-4.7",
+      "displayName": "GLM 4.7 (FreeTheAi)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "mim/mimo-v2.5",
+      "displayName": "MiMo v2.5 (mim)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "opc/mimo-v2.5-free",
+      "displayName": "MiMo v2.5 Free (FreeTheAi)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "vova/kimi-k2.5",
+      "displayName": "Kimi K2.5 (FreeTheAi)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "vova/mimo-v2.5",
+      "displayName": "MiMo v2.5 (FreeTheAi)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "vova/minimax-m2.7",
+      "displayName": "MiniMax M2.7 (FreeTheAi)",
+      "intelligenceRank": 6,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 1000000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gemini-3.1-flash-lite",
+      "displayName": "Gemini 3.1 Flash Lite (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 8,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-4o-mini",
+      "displayName": "GPT-4o mini (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "kimi-k2.6",
+      "displayName": "Kimi K2.6 (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "minimaxai/minimax-m3",
+      "displayName": "minimax m3 (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "qwen-coder",
+      "displayName": "Qwen Coder (g4f)",
+      "intelligenceRank": 6,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
     },
     {
       "platform": "groq",
@@ -666,11 +1184,17 @@
       },
       "monthlyTokenBudget": "~500M",
       "contextWindow": 256000,
-      "maxOutputTokens": 64000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
-      "quirks": []
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        }
+      ]
     },
     {
       "platform": "openrouter",
@@ -700,6 +1224,39 @@
       ]
     },
     {
+      "platform": "agnes",
+      "modelId": "agnes-2.0-flash",
+      "displayName": "Agnes 2.0 Flash",
+      "intelligenceRank": 7,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 20,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~50-100M",
+      "contextWindow": 524288,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "agnes-vision-hangs",
+          "title": "Vision via image_url may hang",
+          "body": "The doc claims agnes-2.0-flash supports image understanding via image_url, but live tests through this proxy have hung past 60s on a 280px PNG. Treat supportsVision=true as aspirational; plan for fallback or direct API calls if vision is load-bearing.",
+          "severity": "warning"
+        },
+        {
+          "slug": "agnes-free-tier",
+          "title": "20 RPM free tier, $0 list price",
+          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
       "platform": "cerebras",
       "modelId": "zai-glm-4.7",
       "displayName": "GLM-4.7 (Cerebras)",
@@ -713,7 +1270,7 @@
         "tpd": 1000000
       },
       "monthlyTokenBudget": "~30M",
-      "contextWindow": 8192,
+      "contextWindow": 65536,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -747,6 +1304,226 @@
       ]
     },
     {
+      "platform": "freetheai",
+      "modelId": "kai/nvidia/nemotron-3-super-120b-a12b:free",
+      "displayName": "Nemotron 3 Super 120B (FreeTheAi)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "mim/mimo-v2.5-pro",
+      "displayName": "MiMo v2.5 Pro (mim)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "min/minimax-m3",
+      "displayName": "MiniMax M3 (FreeTheAi)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 1000000,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "vova/kimi-k2.7-code",
+      "displayName": "Kimi K2.7 Coder (FreeTheAi)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 262144,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "vova/mimo-v2.5-pro",
+      "displayName": "MiMo v2.5 Pro (FreeTheAi)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "vova/mimo-v2.5-pro-ultraspeed",
+      "displayName": "MiMo v2.5 Pro UltraSpeed (FreeTheAi)",
+      "intelligenceRank": 7,
+      "speedRank": 8,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "glm-5.1",
+      "displayName": "GLM 5.1 (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-5.4",
+      "displayName": "GPT-5.4 (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "kimi-k2.7-code",
+      "displayName": "Kimi K2.7 Coder (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "qwen3.6-plus",
+      "displayName": "Qwen 3.6 Plus (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "zai-org/GLM-5.1",
+      "displayName": "GLM 5.1 Modelscope (g4f)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
       "platform": "opencode",
       "modelId": "nemotron-3-ultra-free",
       "displayName": "Nemotron 3 Ultra Free (OpenCode Zen)",
@@ -761,12 +1538,22 @@
       },
       "monthlyTokenBudget": "~500M",
       "contextWindow": 1000000,
-      "maxOutputTokens": 128000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
-        "zen-serves-ultra-fast"
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        },
+        {
+          "slug": "zen-serves-ultra-fast",
+          "title": "Zen serves the 550B fast",
+          "body": "OpenCode Zen serves nemotron-3-ultra in ~2s with working tool calls where the OpenRouter route hangs — the live-verified path for this model.",
+          "severity": "info"
+        }
       ]
     },
     {
@@ -784,14 +1571,207 @@
       },
       "monthlyTokenBudget": "~6M",
       "contextWindow": 1000000,
+      "enabled": false,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "or-ultra-hangs",
+          "title": "OpenRouter ultra route hangs",
+          "body": "nemotron-3-ultra (550B) on OpenRouter takes 180s+ even on trivial prompts (heavily congested), so its OR row is seeded disabled. Use the OpenCode Zen route instead.",
+          "severity": "warning"
+        },
+        {
+          "slug": "or-free-cap-account-wide",
+          "title": "Daily :free cap is account-wide",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "kai/openrouter/free",
+      "displayName": "Nemotron 3 Ultra (FreeTheAi)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "vova/gpt-5.5",
+      "displayName": "GPT-5.5 (FreeTheAi)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 400000,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "claude-sonnet-4-6",
+      "displayName": "Claude Sonnet 4.6 (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "deepseek-v4-pro",
+      "displayName": "DeepSeek V4 Pro (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-5.5",
+      "displayName": "GPT-5.5 (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "gpt-oss-120b",
+      "displayName": "GPT-OSS 120B (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "qwen3.7-max",
+      "displayName": "Qwen 3.7 Max (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "zai-org/GLM-5.2",
+      "displayName": "GLM 5.2 Modelscope (g4f)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "agnes",
+      "modelId": "agnes-1.5-flash",
+      "displayName": "Agnes 1.5 Flash",
+      "intelligenceRank": 9,
+      "speedRank": 3,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 20,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~50-100M",
+      "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
         {
-          "slug": "or-free-cap-account-wide",
-          "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
+          "slug": "agnes-free-tier",
+          "title": "20 RPM free tier, $0 list price",
+          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
           "severity": "info"
         }
       ]
@@ -849,6 +1829,46 @@
           "severity": "info"
         }
       ]
+    },
+    {
+      "platform": "g4f",
+      "modelId": "claude-opus-4-6-thinking",
+      "displayName": "Claude Opus 4.6 Thinking (g4f)",
+      "intelligenceRank": 9,
+      "speedRank": 2,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "g4f",
+      "modelId": "openai/gpt-5",
+      "displayName": "GPT-5 (g4f)",
+      "intelligenceRank": 9,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 2400,
+        "tpm": 100000,
+        "tpd": 1000000
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 65536,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
     },
     {
       "platform": "cloudflare",
@@ -997,6 +2017,39 @@
       "supportsVision": true,
       "supportsTools": true,
       "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "gpt-oss-120b:free",
+      "displayName": "GPT-OSS 120B (RW free)",
+      "intelligenceRank": 12,
+      "speedRank": 10,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-502-backend",
+          "title": "Some backends returning 502",
+          "body": "gpt-oss-120b:free and ling-2.6-flash:free return 502 Bad Gateway. Upstream backend issue, may recover.",
+          "severity": "warning"
+        },
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
     },
     {
       "platform": "cohere",
@@ -1187,6 +2240,66 @@
       ]
     },
     {
+      "platform": "routeway",
+      "modelId": "gemma-4-31b-it:free",
+      "displayName": "Gemma 4 31B (RW free)",
+      "intelligenceRank": 14,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 262144,
+      "enabled": false,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-premium-only",
+          "title": "Premium-only despite :free suffix",
+          "body": "Some models with :free suffix (e.g. gemma-4-31b-it:free) return 402 'exclusive model for premium users'. The :free suffix does not guarantee free access.",
+          "severity": "blocker"
+        },
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "llama-3.3-70b-instruct:free",
+      "displayName": "Llama 3.3 70B (RW free)",
+      "intelligenceRank": 15,
+      "speedRank": 9,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
       "platform": "llm7",
       "modelId": "codestral-latest",
       "displayName": "Codestral (LLM7)",
@@ -1252,6 +2365,66 @@
       "supportsVision": false,
       "supportsTools": true,
       "quirks": []
+    },
+    {
+      "platform": "routeway",
+      "modelId": "ling-2.6-flash:free",
+      "displayName": "Ling 2.6 Flash (RW free)",
+      "intelligenceRank": 16,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 262144,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-502-backend",
+          "title": "Some backends returning 502",
+          "body": "gpt-oss-120b:free and ling-2.6-flash:free return 502 Bad Gateway. Upstream backend issue, may recover.",
+          "severity": "warning"
+        },
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "nemotron-3-nano-30b-a3b:free",
+      "displayName": "Nemotron 3 Nano 30B (RW free)",
+      "intelligenceRank": 16,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 256000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
     },
     {
       "platform": "cloudflare",
@@ -1409,6 +2582,60 @@
       ]
     },
     {
+      "platform": "routeway",
+      "modelId": "laguna-m.1:free",
+      "displayName": "Laguna M.1 (RW free)",
+      "intelligenceRank": 17,
+      "speedRank": 8,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "step-3.5-flash:free",
+      "displayName": "Step 3.5 Flash (RW free)",
+      "intelligenceRank": 17,
+      "speedRank": 6,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 256000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
       "platform": "groq",
       "modelId": "groq/compound-mini",
       "displayName": "Compound Mini (Groq)",
@@ -1549,6 +2776,33 @@
       ]
     },
     {
+      "platform": "routeway",
+      "modelId": "nemotron-nano-9b-v2:free",
+      "displayName": "Nemotron Nano 9B V2 (RW free)",
+      "intelligenceRank": 18,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 128000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
       "platform": "zhipu",
       "modelId": "glm-4.7-flash",
       "displayName": "GLM-4.7 Flash",
@@ -1632,6 +2886,33 @@
           "title": "Daily :free cap is account-wide",
           "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "laguna-xs.2:free",
+      "displayName": "Laguna XS.2 (RW free)",
+      "intelligenceRank": 19,
+      "speedRank": 7,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
         }
       ]
     },
@@ -1851,61 +3132,6 @@
       ]
     },
     {
-      "platform": "nvidia",
-      "modelId": "nvidia/nemotron-3-ultra-550b-a55b",
-      "displayName": "Nemotron 3 Ultra 550B (NV)",
-      "intelligenceRank": 1,
-      "speedRank": 12,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 40 RPM",
-      "contextWindow": 1048576,
-      "maxOutputTokens": 16384,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "nvidia",
-      "modelId": "stepfun-ai/step-3.7-flash",
-      "displayName": "Step 3.7 Flash (NV)",
-      "intelligenceRank": 4,
-      "speedRank": 3,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 40 RPM",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
       "platform": "ollama",
       "modelId": "gemma4:31b",
       "displayName": "Gemma 4 31B (Ollama)",
@@ -1976,6 +3202,33 @@
           "title": "Daily :free cap is account-wide",
           "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "llama-3.1-8b-instruct:free",
+      "displayName": "Llama 3.1 8B (RW free)",
+      "intelligenceRank": 22,
+      "speedRank": 8,
+      "sizeLabel": "Small",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 16384,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
         }
       ]
     },
@@ -2097,6 +3350,33 @@
           "title": "Daily :free cap is account-wide",
           "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "routeway",
+      "modelId": "llama-3.2-3b-instruct:free",
+      "displayName": "Llama 3.2 3B (RW free)",
+      "intelligenceRank": 25,
+      "speedRank": 8,
+      "sizeLabel": "Small",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 16384,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
         }
       ]
     },
@@ -2282,6 +3562,33 @@
       ]
     },
     {
+      "platform": "routeway",
+      "modelId": "llama-3.2-1b-instruct:free",
+      "displayName": "Llama 3.2 1B (RW free)",
+      "intelligenceRank": 28,
+      "speedRank": 8,
+      "sizeLabel": "Small",
+      "limits": {
+        "rpm": 5,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
+      "contextWindow": 16384,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": false,
+      "quirks": [
+        {
+          "slug": "routeway-shared-rate-limit",
+          "title": "5 RPM / 200 RPD shared across all :free models",
+          "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
       "platform": "cloudflare",
       "modelId": "@cf/ibm-granite/granite-4.0-h-micro",
       "displayName": "Granite 4.0 H Micro (CF)",
@@ -2388,732 +3695,45 @@
           "severity": "info"
         }
       ]
-    },
-    {
-      "platform": "agnes",
-      "modelId": "agnes-2.0-flash",
-      "displayName": "Agnes 2.0 Flash",
-      "intelligenceRank": 7,
-      "speedRank": 3,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 20,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 524288,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "modality": "text",
-      "quirks": [
-        {
-          "slug": "agnes-free-tier",
-          "title": "20 RPM free tier, $0 list price",
-          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
-          "severity": "info"
-        },
-        {
-          "slug": "agnes-vision-hangs",
-          "title": "Vision via image_url may hang",
-          "body": "The doc claims agnes-2.0-flash supports image understanding via image_url, but live tests through this proxy have hung past 60s on a 280px PNG. Treat supportsVision=true as aspirational; plan for fallback or direct API calls if vision is load-bearing.",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "platform": "agnes",
-      "modelId": "agnes-1.5-flash",
-      "displayName": "Agnes 1.5 Flash",
-      "intelligenceRank": 9,
-      "speedRank": 3,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 20,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~50-100M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "modality": "text",
-      "quirks": [
-        {
-          "slug": "agnes-free-tier",
-          "title": "20 RPM free tier, $0 list price",
-          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "agnes",
-      "modelId": "agnes-image-2.0-flash",
-      "displayName": "Agnes Image 2.0 Flash",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 20,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~50-100M",
-      "contextWindow": null,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "modality": "image",
-      "mediaNote": "Free - 1K/2K up to 20/10 RPM, 3K/4K 1 RPM",
-      "quirks": [
-        {
-          "slug": "agnes-free-tier",
-          "title": "20 RPM free tier, $0 list price",
-          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "agnes",
-      "modelId": "agnes-image-2.1-flash",
-      "displayName": "Agnes Image 2.1 Flash",
-      "intelligenceRank": 7,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 20,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~50-100M",
-      "contextWindow": null,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "modality": "image",
-      "mediaNote": "Free - 1K/2K up to 20/10 RPM, high-density optimized",
-      "quirks": [
-        {
-          "slug": "agnes-free-tier",
-          "title": "20 RPM free tier, $0 list price",
-          "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "routeway",
-      "modelId": "llama-3.3-70b-instruct:free",
-      "displayName": "Llama 3.3 70B (RW free)",
-      "intelligenceRank": 15,
-      "speedRank": 9,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "nemotron-nano-9b-v2:free",
-      "displayName": "Nemotron Nano 9B V2 (RW free)",
-      "intelligenceRank": 18,
-      "speedRank": 7,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 128000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "step-3.5-flash:free",
-      "displayName": "Step 3.5 Flash (RW free)",
-      "intelligenceRank": 17,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 256000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "gpt-oss-120b:free",
-      "displayName": "GPT-OSS 120B (RW free)",
-      "intelligenceRank": 12,
-      "speedRank": 10,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "routeway-502-backend",
-          "title": "Currently returning 502",
-          "body": "Upstream backend is down (502 Bad Gateway), verified June 2026. May recover.",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "platform": "routeway",
-      "modelId": "ling-2.6-flash:free",
-      "displayName": "Ling 2.6 Flash (RW free)",
-      "intelligenceRank": 16,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "routeway-502-backend",
-          "title": "Currently returning 502",
-          "body": "Upstream backend is down (502 Bad Gateway), verified June 2026. May recover.",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "platform": "routeway",
-      "modelId": "gemma-4-31b-it:free",
-      "displayName": "Gemma 4 31B (RW free)",
-      "intelligenceRank": 14,
-      "speedRank": 7,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 262144,
-      "enabled": false,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "routeway-premium-only",
-          "title": "Premium-only despite :free suffix",
-          "body": "Returns 402 'exclusive model for premium users'. The :free suffix is misleading — requires a paid subscription.",
-          "severity": "blocker"
-        }
-      ]
-    },
-    {
-      "platform": "routeway",
-      "modelId": "llama-3.1-8b-instruct:free",
-      "displayName": "Llama 3.1 8B (RW free)",
-      "intelligenceRank": 22,
-      "speedRank": 8,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 16384,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "llama-3.2-1b-instruct:free",
-      "displayName": "Llama 3.2 1B (RW free)",
-      "intelligenceRank": 28,
-      "speedRank": 8,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 16384,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "llama-3.2-3b-instruct:free",
-      "displayName": "Llama 3.2 3B (RW free)",
-      "intelligenceRank": 25,
-      "speedRank": 8,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 16384,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "nemotron-3-nano-30b-a3b:free",
-      "displayName": "Nemotron 3 Nano 30B (RW free)",
-      "intelligenceRank": 16,
-      "speedRank": 7,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 256000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "laguna-m.1:free",
-      "displayName": "Laguna M.1 (RW free)",
-      "intelligenceRank": 17,
-      "speedRank": 8,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "routeway",
-      "modelId": "laguna-xs.2:free",
-      "displayName": "Laguna XS.2 (RW free)",
-      "intelligenceRank": 19,
-      "speedRank": 7,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 5,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "g4f",
-      "modelId": "gpt-5.5",
-      "displayName": "GPT-5.5 (g4f)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 400000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "gpt-5.4",
-      "displayName": "GPT-5.4 (g4f)",
-      "intelligenceRank": 7,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1050000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "openai/gpt-5",
-      "displayName": "GPT-5 (g4f)",
-      "intelligenceRank": 9,
-      "speedRank": 3,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 400000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "gpt-4o-mini",
-      "displayName": "GPT-4o mini (g4f)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 128000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "gpt-oss-120b",
-      "displayName": "GPT-OSS 120B (g4f)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "deepseek-v4-pro",
-      "displayName": "DeepSeek V4 Pro (g4f)",
-      "intelligenceRank": 8,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "kimi-k2.7-code",
-      "displayName": "Kimi K2.7 Coder (g4f)",
-      "intelligenceRank": 7,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "kimi-k2.6",
-      "displayName": "Kimi K2.6 (g4f)",
-      "intelligenceRank": 6,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "glm-5.1",
-      "displayName": "GLM 5.1 (g4f)",
-      "intelligenceRank": 7,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 200000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "zai-org/GLM-5.1",
-      "displayName": "GLM 5.1 Modelscope (g4f)",
-      "intelligenceRank": 7,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 200000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "qwen-coder",
-      "displayName": "Qwen Coder (g4f)",
-      "intelligenceRank": 6,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "qwen3.7-max",
-      "displayName": "Qwen 3.7 Max (g4f)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "qwen3.6-plus",
-      "displayName": "Qwen 3.6 Plus (g4f)",
-      "intelligenceRank": 7,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "minimaxai/minimax-m3",
-      "displayName": "minimax m3 (g4f)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "gemini-3.1-flash-lite",
-      "displayName": "Gemini 3.1 Flash Lite (g4f)",
-      "intelligenceRank": 6,
-      "speedRank": 8,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1048576,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "zai-org/GLM-5.2",
-      "displayName": "GLM 5.2 Modelscope (g4f)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "claude-opus-4-6-thinking",
-      "displayName": "Claude Opus 4.6 Thinking (g4f)",
-      "intelligenceRank": 9,
-      "speedRank": 2,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
-    },
-    {
-      "platform": "g4f",
-      "modelId": "claude-sonnet-4-6",
-      "displayName": "Claude Sonnet 4.6 (g4f)",
-      "intelligenceRank": 8,
-      "speedRank": 3,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": null,
-        "tpm": 100000,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true
     }
   ],
   "quirks": [
+    {
+      "slug": "agnes-free-tier",
+      "title": "20 RPM free tier, $0 list price",
+      "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
+      "severity": "info",
+      "targets": [
+        {
+          "platform": "agnes",
+          "modelGlob": null
+        }
+      ]
+    },
+    {
+      "slug": "agnes-video-not-routed",
+      "title": "agnes-video-v2.0 not yet routed",
+      "body": "Agnes exposes agnes-video-v2.0 (text-to-video, image-to-video, multi-image, keyframes) at POST /v1/videos with an async task model returning video_id. This gateway does not yet ship a video adapter, so the model is intentionally not in the catalog. Use the direct endpoint at apihub.agnes-ai.com/v1/videos until the video route lands.",
+      "severity": "info",
+      "targets": [
+        {
+          "platform": "agnes",
+          "modelGlob": "*video*"
+        }
+      ]
+    },
+    {
+      "slug": "agnes-vision-hangs",
+      "title": "Vision via image_url may hang",
+      "body": "The doc claims agnes-2.0-flash supports image understanding via image_url, but live tests through this proxy have hung past 60s on a 280px PNG. Treat supportsVision=true as aspirational; plan for fallback or direct API calls if vision is load-bearing.",
+      "severity": "warning",
+      "targets": [
+        {
+          "platform": "agnes",
+          "modelGlob": "agnes-2.0-flash"
+        }
+      ]
+    },
     {
       "slug": "cloudflare-key-format",
       "title": "Key is account_id:token",
@@ -3223,6 +3843,58 @@
       ]
     },
     {
+      "slug": "routeway-502-backend",
+      "title": "Some backends returning 502",
+      "body": "gpt-oss-120b:free and ling-2.6-flash:free return 502 Bad Gateway. Upstream backend issue, may recover.",
+      "severity": "warning",
+      "targets": [
+        {
+          "platform": "routeway",
+          "modelGlob": "gpt-oss-120b:free"
+        },
+        {
+          "platform": "routeway",
+          "modelGlob": "ling-2.6-flash:free"
+        }
+      ]
+    },
+    {
+      "slug": "routeway-premium-only",
+      "title": "Premium-only despite :free suffix",
+      "body": "Some models with :free suffix (e.g. gemma-4-31b-it:free) return 402 'exclusive model for premium users'. The :free suffix does not guarantee free access.",
+      "severity": "blocker",
+      "targets": [
+        {
+          "platform": "routeway",
+          "modelGlob": "gemma-4-31b-it:free"
+        }
+      ]
+    },
+    {
+      "slug": "routeway-shared-rate-limit",
+      "title": "5 RPM / 200 RPD shared across all :free models",
+      "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
+      "severity": "warning",
+      "targets": [
+        {
+          "platform": "routeway",
+          "modelGlob": "*:free"
+        }
+      ]
+    },
+    {
+      "slug": "siliconflow-intl",
+      "title": "Use the .com international endpoint",
+      "body": "SiliconFlow's free models are reachable with no credit card via the international site (cloud.siliconflow.com, base https://api.siliconflow.com/v1). The .cn site requires Chinese real-name verification; the .com site does not.",
+      "severity": "info",
+      "targets": [
+        {
+          "platform": "siliconflow",
+          "modelGlob": null
+        }
+      ]
+    },
+    {
       "slug": "zen-promo-roster",
       "title": "Limited-time promo, roster rotates",
       "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
@@ -3255,94 +3927,6 @@
         {
           "platform": "zhipu",
           "modelGlob": "*glm-4.6v*"
-        }
-      ]
-    },
-    {
-      "slug": "siliconflow-intl",
-      "title": "Use the .com international endpoint",
-      "body": "SiliconFlow's free models are reachable with no credit card via the international site (cloud.siliconflow.com, base https://api.siliconflow.com/v1). The .cn site requires Chinese real-name verification; the .com site does not.",
-      "severity": "info",
-      "targets": [
-        {
-          "platform": "siliconflow",
-          "modelGlob": null
-        }
-      ]
-    },
-    {
-      "slug": "agnes-free-tier",
-      "title": "20 RPM free tier, $0 list price",
-      "body": "Agnes AI (Sapiens AI) free tier: 20 RPM effective for text (30 allowed), 20/10/1/1 RPM for image at 1K/2K/3K/4K, 1 RPM for video. Catalog price is $0 across all models; the platform's paid Token Plan raises RPM and adds subscription quotas but the free tier is the default.",
-      "severity": "info",
-      "targets": [
-        {
-          "platform": "agnes",
-          "modelGlob": null
-        }
-      ]
-    },
-    {
-      "slug": "agnes-vision-hangs",
-      "title": "Vision via image_url may hang",
-      "body": "The doc claims agnes-2.0-flash supports image understanding via image_url, but live tests through this proxy have hung past 60s on a 280px PNG. Treat supportsVision=true as aspirational; plan for fallback or direct API calls if vision is load-bearing.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "agnes",
-          "modelGlob": "agnes-2.0-flash"
-        }
-      ]
-    },
-    {
-      "slug": "agnes-video-not-routed",
-      "title": "agnes-video-v2.0 not yet routed",
-      "body": "Agnes exposes agnes-video-v2.0 (text-to-video, image-to-video, multi-image, keyframes) at POST /v1/videos with an async task model returning video_id. This gateway does not yet ship a video adapter, so the model is intentionally not in the catalog. Use the direct endpoint at apihub.agnes-ai.com/v1/videos until the video route lands.",
-      "severity": "info",
-      "targets": [
-        {
-          "platform": "agnes",
-          "modelGlob": "*video*"
-        }
-      ]
-    },
-    {
-      "slug": "routeway-shared-rate-limit",
-      "title": "5 RPM / 200 RPD shared across all :free models",
-      "body": "RouteWay free tier enforces 5 RPM and 200 RPD account-wide, shared across ALL :free models (not per-model). Verified June 2026. The docs claim 20 RPM but actual limit is 5 RPM.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "routeway",
-          "modelGlob": "*:free"
-        }
-      ]
-    },
-    {
-      "slug": "routeway-premium-only",
-      "title": "Premium-only despite :free suffix",
-      "body": "Some models with :free suffix (e.g. gemma-4-31b-it:free) return 402 'exclusive model for premium users'. The :free suffix does not guarantee free access.",
-      "severity": "blocker",
-      "targets": [
-        {
-          "platform": "routeway",
-          "modelGlob": "gemma-4-31b-it:free"
-        }
-      ]
-    },
-    {
-      "slug": "routeway-502-backend",
-      "title": "Some backends returning 502",
-      "body": "gpt-oss-120b:free and ling-2.6-flash:free return 502 Bad Gateway. Upstream backend issue, may recover.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "routeway",
-          "modelGlob": "gpt-oss-120b:free"
-        },
-        {
-          "platform": "routeway",
-          "modelGlob": "ling-2.6-flash:free"
         }
       ]
     }
