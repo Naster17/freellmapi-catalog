@@ -1,6 +1,6 @@
 {
-  "version": "2026.07.03.2",
-  "generatedAt": "2026-07-03T06:37:43.431Z",
+  "version": "2026.07.03.3",
+  "generatedAt": "2026-07-03T06:53:28.054Z",
   "tier": "monthly",
   "counts": {
     "platforms": 19,
@@ -2779,14 +2779,14 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 400000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true
     },
     {
@@ -2798,14 +2798,14 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 1050000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true
     },
     {
@@ -2817,14 +2817,14 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 400000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true
     },
     {
@@ -2836,12 +2836,12 @@
       "sizeLabel": "Medium",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 128000,
       "enabled": true,
       "supportsVision": true,
       "supportsTools": true
@@ -2855,12 +2855,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -2874,12 +2874,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -2893,14 +2893,14 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 262144,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true
     },
     {
@@ -2912,14 +2912,14 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 262144,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true
     },
     {
@@ -2931,12 +2931,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 200000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -2950,12 +2950,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 200000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -2969,12 +2969,12 @@
       "sizeLabel": "Medium",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -2988,12 +2988,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -3007,12 +3007,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -3026,14 +3026,14 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 1000000,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true
     },
     {
@@ -3045,14 +3045,14 @@
       "sizeLabel": "Medium",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 1048576,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true
     },
     {
@@ -3064,12 +3064,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 65536,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true
@@ -3083,12 +3083,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 200000,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": true,
       "supportsTools": true
@@ -3102,12 +3102,12 @@
       "sizeLabel": "Large",
       "limits": {
         "rpm": 10,
-        "rpd": 2400,
+        "rpd": null,
         "tpm": 100000,
-        "tpd": 1000000
+        "tpd": null
       },
       "monthlyTokenBudget": "~10M",
-      "contextWindow": 200000,
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": true,
       "supportsTools": true
