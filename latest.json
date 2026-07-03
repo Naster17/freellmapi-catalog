@@ -1,11 +1,11 @@
 {
-  "version": "2026.07.03.5",
-  "generatedAt": "2026-07-03T13:26:01.480Z",
+  "version": "2026.07.03.2",
+  "generatedAt": "2026-07-03T13:40:49.538Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
-    "models": 156,
-    "enabledModels": 154,
+    "models": 158,
+    "enabledModels": 156,
     "quirks": 18
   },
   "platforms": [
@@ -911,6 +911,26 @@
     },
     {
       "platform": "freetheai",
+      "modelId": "opc/deepseek-v4-flash-free",
+      "displayName": "DeepSeek V4 Flash Free (FreeTheAi)",
+      "intelligenceRank": 6,
+      "speedRank": 8,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
       "modelId": "opc/mimo-v2.5-free",
       "displayName": "MiMo v2.5 Free (FreeTheAi)",
       "intelligenceRank": 6,
@@ -1644,6 +1664,26 @@
       },
       "monthlyTokenBudget": "~10M",
       "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "olm/deepseek-v4-pro",
+      "displayName": "DeepSeek V4 Pro (FreeTheAi)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 1000000,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
