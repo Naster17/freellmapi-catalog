@@ -1,11 +1,11 @@
 {
-  "version": "2026.07.03.3",
-  "generatedAt": "2026-07-03T12:46:07.653Z",
+  "version": "2026.07.03.2",
+  "generatedAt": "2026-07-03T13:24:39.571Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
-    "models": 154,
-    "enabledModels": 152,
+    "models": 156,
+    "enabledModels": 154,
     "quirks": 18
   },
   "platforms": [
@@ -1305,6 +1305,26 @@
     },
     {
       "platform": "freetheai",
+      "modelId": "glm/glm-5.1",
+      "displayName": "GLM 5.1 (FreeTheAi)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "freetheai",
       "modelId": "kai/nvidia/nemotron-3-super-120b-a12b:free",
       "displayName": "Nemotron 3 Super 120B (FreeTheAi)",
       "intelligenceRank": 7,
@@ -1588,6 +1608,26 @@
           "severity": "info"
         }
       ]
+    },
+    {
+      "platform": "freetheai",
+      "modelId": "glm/glm-5.2",
+      "displayName": "GLM 5.2 (FreeTheAi)",
+      "intelligenceRank": 8,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 10,
+        "rpd": 250,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~10M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
     },
     {
       "platform": "freetheai",
