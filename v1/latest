@@ -1,12 +1,12 @@
 {
-  "version": "2026.07.03.8",
-  "generatedAt": "2026-07-03T14:19:36.715Z",
+  "version": "2026.07.05.3",
+  "generatedAt": "2026-07-05T13:40:08.525Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
-    "models": 158,
-    "enabledModels": 156,
-    "quirks": 18
+    "models": 159,
+    "enabledModels": 157,
+    "quirks": 19
   },
   "platforms": [
     {
@@ -658,6 +658,39 @@
           "slug": "nvidia-rate-limited",
           "title": "Recurring free, 40 RPM, eval-only ToS",
           "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "nvidia",
+      "modelId": "z-ai/glm-5.2",
+      "displayName": "GLM-5.2 (NV, slow cold-start, 1M ctx)",
+      "intelligenceRank": 4,
+      "speedRank": 10,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 40,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 40 RPM",
+      "contextWindow": 1000000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "nvidia-rate-limited",
+          "title": "Recurring free, 40 RPM, eval-only ToS",
+          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        },
+        {
+          "slug": "nvidia-cold-start",
+          "title": "1M-context model, slow first-token",
+          "body": "GLM-5.2 advertises a 1,000,000-token context window. First request after idle takes several seconds for a cold start (NVIDIA NIM spins the model on demand). Subsequent requests stream normally.",
           "severity": "info"
         }
       ]
