@@ -1,6 +1,6 @@
 {
-  "version": "2026.07.05.3",
-  "generatedAt": "2026-07-05T13:40:08.525Z",
+  "version": "2026.07.05.6",
+  "generatedAt": "2026-07-05T13:46:31.317Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
@@ -638,7 +638,7 @@
     {
       "platform": "nvidia",
       "modelId": "z-ai/glm-5.1",
-      "displayName": "GLM-5.1 (NV, slow cold-start)",
+      "displayName": "GLM-5.1 (NV)",
       "intelligenceRank": 5,
       "speedRank": 9,
       "sizeLabel": "Frontier",
@@ -665,7 +665,7 @@
     {
       "platform": "nvidia",
       "modelId": "z-ai/glm-5.2",
-      "displayName": "GLM-5.2 (NV, slow cold-start, 1M ctx)",
+      "displayName": "GLM-5.2 (NV)",
       "intelligenceRank": 4,
       "speedRank": 10,
       "sizeLabel": "Frontier",
