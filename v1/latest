@@ -1,11 +1,11 @@
 {
-  "version": "2026.07.05.6",
-  "generatedAt": "2026-07-05T13:46:31.317Z",
+  "version": "2026.07.05.7",
+  "generatedAt": "2026-07-05T14:06:37.864Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
     "models": 159,
-    "enabledModels": 157,
+    "enabledModels": 156,
     "quirks": 19
   },
   "platforms": [
@@ -650,7 +650,7 @@
       },
       "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 200000,
-      "enabled": true,
+      "enabled": false,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
