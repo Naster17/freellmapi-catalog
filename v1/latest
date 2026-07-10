@@ -1,11 +1,11 @@
 {
-  "version": "2026.07.05.7",
-  "generatedAt": "2026-07-05T14:06:37.864Z",
+  "version": "2026.07.10.1",
+  "generatedAt": "2026-07-10T12:00:00.000Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
-    "models": 159,
-    "enabledModels": 156,
+    "models": 160,
+    "enabledModels": 157,
     "quirks": 19
   },
   "platforms": [
@@ -543,6 +543,33 @@
       },
       "monthlyTokenBudget": "~500M",
       "contextWindow": 204800,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "opencode",
+      "modelId": "hy3-free",
+      "displayName": "Hy3 Free (OpenCode Zen)",
+      "intelligenceRank": 5,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 20,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~500M",
+      "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
