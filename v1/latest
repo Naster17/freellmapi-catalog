@@ -609,26 +609,6 @@
         }
       ]
     },
-      "monthlyTokenBudget": "~500M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "zen-promo-roster",
-          "title": "Limited-time promo, roster rotates",
-          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
-          "severity": "warning"
-        },
-        {
-          "slug": "zen-data-collection",
-          "title": "Prompts/outputs may train the model",
-          "body": "During the free period, collected data may be used to improve the model. Do not submit personal or confidential data. See OpenCode Terms of Use and Privacy Policy.",
-          "severity": "warning"
-        }
-      ]
-    },
     {
       "platform": "freetheai",
       "modelId": "glm/glm-4.5",
