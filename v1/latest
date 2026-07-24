@@ -1,6 +1,6 @@
 {
-  "version": "2026.07.24.1",
-  "generatedAt": "2026-07-24T11:05:00.000Z",
+  "version": "2026.07.24.2",
+  "generatedAt": "2026-07-24T09:12:10.150Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
@@ -582,7 +582,7 @@
         }
       ]
     },
-{
+    {
       "platform": "opencode",
       "modelId": "ling-3.0-flash-free",
       "displayName": "Ling 3.0 Flash Free (OpenCode Zen)",
