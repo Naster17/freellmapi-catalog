@@ -1,12 +1,12 @@
 {
-  "version": "2026.07.10.1",
-  "generatedAt": "2026-07-10T12:00:00.000Z",
+  "version": "2026.07.24.1",
+  "generatedAt": "2026-07-24T11:05:00.000Z",
   "tier": "live",
   "counts": {
     "platforms": 20,
-    "models": 160,
-    "enabledModels": 157,
-    "quirks": 19
+    "models": 162,
+    "enabledModels": 159,
+    "quirks": 20
   },
   "platforms": [
     {
@@ -578,6 +578,53 @@
           "slug": "zen-promo-roster",
           "title": "Limited-time promo, roster rotates",
           "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        }
+      ]
+    },
+{
+      "platform": "opencode",
+      "modelId": "ling-3.0-flash-free",
+      "displayName": "Ling 3.0 Flash Free (OpenCode Zen)",
+      "intelligenceRank": 5,
+      "speedRank": 3,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 20,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~500M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        }
+      ]
+    },
+      "monthlyTokenBudget": "~500M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        },
+        {
+          "slug": "zen-data-collection",
+          "title": "Prompts/outputs may train the model",
+          "body": "During the free period, collected data may be used to improve the model. Do not submit personal or confidential data. See OpenCode Terms of Use and Privacy Policy.",
           "severity": "warning"
         }
       ]
@@ -1272,6 +1319,39 @@
           "slug": "zen-promo-roster",
           "title": "Limited-time promo, roster rotates",
           "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "opencode",
+      "modelId": "laguna-s-2.1-free",
+      "displayName": "Laguna S 2.1 Free (OpenCode Zen)",
+      "intelligenceRank": 6,
+      "speedRank": 4,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 20,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~500M",
+      "contextWindow": 200000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        },
+        {
+          "slug": "zen-data-collection",
+          "title": "Prompts/outputs may train the model",
+          "body": "During the free period, collected data may be used to improve the model. Do not submit personal or confidential data. See OpenCode Terms of Use and Privacy Policy.",
           "severity": "warning"
         }
       ]
