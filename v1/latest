@@ -582,7 +582,7 @@
     {
       "platform": "opencode",
       "modelId": "deepseek-v4-flash-free",
-      "displayName": "DeepSeek V4 Flash Free (OpenCode Zen)",
+      "displayName": "DeepSeek V4 Flash 3107 (OpenCode Zen)",
       "intelligenceRank": 4,
       "speedRank": 4,
       "sizeLabel": "Frontier",
