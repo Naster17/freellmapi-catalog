@@ -1,15 +1,15 @@
 {
-  "version": "2026.08.11.1",
-  "generatedAt": "2026-08-12T14:35:53.000Z",
+  "version": "2026.08.15.1",
+  "generatedAt": "2026-08-15T16:53:27.479Z",
   "tier": "live",
   "counts": {
-    "platforms": 28,
-    "models": 234,
-    "enabledModels": 232,
+    "platforms": 29,
+    "models": 236,
+    "enabledModels": 234,
     "embeddings": 0,
     "enabledEmbeddings": 0,
     "transcriptionModels": 0,
-    "quirks": 37
+    "quirks": 38
   },
   "platforms": [
     {
@@ -123,9 +123,40 @@
     {
       "id": "requesty",
       "name": "Requesty"
+    },
+    {
+      "id": "modal",
+      "name": "Modal"
     }
   ],
   "models": [
+    {
+      "platform": "modal",
+      "modelId": "Qwen/Qwen3.8-2.4T-A95B",
+      "displayName": "Qwen3.8 2.4T A95B (Modal)",
+      "intelligenceRank": 1,
+      "speedRank": 6,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "$30 / key / 30d",
+      "contextWindow": 1000000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "modal-endpoint-key",
+          "title": "Per-endpoint URL + proxy token, dollar-metered",
+          "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-….ws-… from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
+          "severity": "info"
+        }
+      ]
+    },
     {
       "platform": "nvidia",
       "modelId": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -176,6 +207,33 @@
           "slug": "cloudflare-key-format",
           "title": "Key is account_id:token",
           "body": "Cloudflare Workers AI authenticates with a combined credential in the form \"account_id:token\", not a bare token.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "modal",
+      "modelId": "moonshotai/Kimi-K3",
+      "displayName": "Kimi K3 (Modal)",
+      "intelligenceRank": 2,
+      "speedRank": 5,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "$30 / key / 30d",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "modal-endpoint-key",
+          "title": "Per-endpoint URL + proxy token, dollar-metered",
+          "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-….ws-… from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
           "severity": "info"
         }
       ]
@@ -6272,6 +6330,18 @@
         {
           "platform": "zhipu",
           "modelGlob": "*glm-4.6v*"
+        }
+      ]
+    },
+    {
+      "slug": "modal-endpoint-key",
+      "title": "Per-endpoint URL + proxy token, dollar-metered",
+      "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-….ws-… from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
+      "severity": "info",
+      "targets": [
+        {
+          "platform": "modal",
+          "modelGlob": null
         }
       ]
     }
