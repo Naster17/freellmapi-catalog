@@ -1,15 +1,15 @@
 {
-  "version": "2026.08.22.4",
-  "generatedAt": "2026-08-22T19:11:14.052344Z",
+  "version": "2026.08.22.5",
+  "generatedAt": "2026-08-22T23:30:00Z",
   "tier": "live",
   "counts": {
-    "platforms": 29,
-    "models": 239,
-    "enabledModels": 237,
+    "platforms": 27,
+    "models": 181,
+    "enabledModels": 179,
     "embeddings": 0,
     "enabledEmbeddings": 0,
     "transcriptionModels": 0,
-    "quirks": 40
+    "quirks": 31
   },
   "platforms": [
     {
@@ -39,10 +39,6 @@
     {
       "id": "cohere",
       "name": "Cohere"
-    },
-    {
-      "id": "freetheai",
-      "name": "FreeTheAi"
     },
     {
       "id": "g4f",
@@ -91,10 +87,6 @@
     {
       "id": "openrouter",
       "name": "OpenRouter"
-    },
-    {
-      "id": "ovh",
-      "name": "OVH AI Endpoints"
     },
     {
       "id": "pollinations",
@@ -152,7 +144,7 @@
         {
           "slug": "modal-endpoint-key",
           "title": "Per-endpoint URL + proxy token, dollar-metered",
-          "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-\u2026.ws-\u2026 from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
+          "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-….ws-… from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
           "severity": "info"
         }
       ]
@@ -170,7 +162,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
@@ -233,7 +225,7 @@
         {
           "slug": "modal-endpoint-key",
           "title": "Per-endpoint URL + proxy token, dollar-metered",
-          "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-\u2026.ws-\u2026 from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
+          "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-….ws-… from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
           "severity": "info"
         }
       ]
@@ -251,7 +243,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 196608,
       "enabled": true,
       "supportsVision": false,
@@ -307,7 +299,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -395,87 +387,6 @@
     },
     {
       "platform": "nvidia",
-      "modelId": "deepseek-ai/deepseek-v4-pro",
-      "displayName": "DeepSeek V4 Pro (NV)",
-      "intelligenceRank": 3,
-      "speedRank": 9,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "nvidia",
-      "modelId": "minimaxai/minimax-m2.7",
-      "displayName": "MiniMax M2.7 (NV)",
-      "intelligenceRank": 3,
-      "speedRank": 9,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
-      "contextWindow": 196608,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "nvidia",
-      "modelId": "mistralai/mistral-large-3-675b-instruct-2512",
-      "displayName": "Mistral Large 3 675B (NV)",
-      "intelligenceRank": 3,
-      "speedRank": 9,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "nvidia",
       "modelId": "moonshotai/kimi-k2.6",
       "displayName": "Kimi K2.6 (NV)",
       "intelligenceRank": 3,
@@ -487,7 +398,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -543,30 +454,10 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "opc/north-mini-code-free",
-      "displayName": "North Mini Code (FreeTheAi)",
-      "intelligenceRank": 4,
-      "speedRank": 7,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 32768,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
     },
     {
       "platform": "huggingface",
@@ -597,33 +488,6 @@
     },
     {
       "platform": "nvidia",
-      "modelId": "deepseek-ai/deepseek-v4-flash",
-      "displayName": "DeepSeek V4 Flash (NV)",
-      "intelligenceRank": 4,
-      "speedRank": 9,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "nvidia",
       "modelId": "deepseek-ai/deepseek-v4-flash-0731",
       "displayName": "DeepSeek V4 Flash 0731 (NV)",
       "intelligenceRank": 4,
@@ -635,7 +499,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
@@ -651,146 +515,6 @@
     },
     {
       "platform": "nvidia",
-      "modelId": "z-ai/glm-5.2",
-      "displayName": "GLM-5.2 (NV)",
-      "intelligenceRank": 4,
-      "speedRank": 10,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "opencode",
-      "modelId": "deepseek-v4-flash-free",
-      "displayName": "DeepSeek V4 Flash 3107 (OpenCode Zen)",
-      "intelligenceRank": 4,
-      "speedRank": 4,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 20,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~500M",
-      "contextWindow": 200000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "zen-promo-roster",
-          "title": "Limited-time promo, roster rotates",
-          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
-          "severity": "warning"
-        },
-        {
-          "slug": "zen-deepseek-v4-0731",
-          "title": "Zen serves DeepSeek-V4-Flash-0731 in place",
-          "body": "OpenCode Zen upgraded the deepseek-v4-flash-free alias in place to the official DeepSeek-V4-Flash-0731 build (post-training release, 2026-07-31; same model id, ~200K context on the free tier). Live-verified 2026-08-05: the endpoint answers; the served checkpoint may still self-identify as an older build during the gateway rollout.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "glm/glm-4.5",
-      "displayName": "GLM 4.5 (FreeTheAi)",
-      "intelligenceRank": 5,
-      "speedRank": 5,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "glm/glm-4.5-air",
-      "displayName": "GLM 4.5 Air (FreeTheAi)",
-      "intelligenceRank": 5,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "kai/poolside/laguna-xs-2.1:free",
-      "displayName": "Laguna XS 2.1 (FreeTheAi)",
-      "intelligenceRank": 5,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "kai/stepfun/step-3.7-flash:free",
-      "displayName": "Step 3.7 Flash (FreeTheAi)",
-      "intelligenceRank": 5,
-      "speedRank": 7,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "nvidia",
       "modelId": "z-ai/glm-5.1",
       "displayName": "GLM-5.1 (NV)",
       "intelligenceRank": 5,
@@ -802,7 +526,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 200000,
       "enabled": false,
       "supportsVision": false,
@@ -844,66 +568,6 @@
       ]
     },
     {
-      "platform": "opencode",
-      "modelId": "ling-3.0-flash-free",
-      "displayName": "Ling 3.0 Flash Free (OpenCode Zen)",
-      "intelligenceRank": 5,
-      "speedRank": 3,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 20,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~500M",
-      "contextWindow": 200000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "zen-promo-roster",
-          "title": "Limited-time promo, roster rotates",
-          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "platform": "opencode",
-      "modelId": "muse-spark-1.2-contributor-free",
-      "displayName": "Muse Spark 1.2 Free (OpenCode Zen)",
-      "intelligenceRank": 5,
-      "speedRank": 7,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 20,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~500M",
-      "contextWindow": 1048576,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "zen-promo-roster",
-          "title": "Limited-time promo, roster rotates",
-          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
-          "severity": "warning"
-        },
-        {
-          "slug": "zen-muse-contributor",
-          "title": "Contributor tier, hidden reasoning tokens",
-          "body": "Muse Spark 1.2 free is served as the contributor roster alias muse-spark-1.2-contributor-free (paid muse-spark-1.2 also exists on Zen) and self-identifies as a Meta model. It burns hidden reasoning tokens before visible output (300+ completion tokens observed for a one-line answer), so avoid tiny max_tokens values or replies can finish by length with empty content.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
       "platform": "openrouter",
       "modelId": "openrouter/owl-alpha",
       "displayName": "Owl Alpha (OR-house)",
@@ -922,39 +586,6 @@
       "supportsVision": false,
       "supportsTools": false,
       "quirks": []
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Qwen3.5-397B-A17B",
-      "displayName": "Qwen3.5 397B (OVH)",
-      "intelligenceRank": 5,
-      "speedRank": 9,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        }
-      ]
     },
     {
       "platform": "cerebras",
@@ -1008,286 +639,6 @@
           "severity": "info"
         }
       ]
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "bbl/gemini-2.5-flash-lite",
-      "displayName": "Gemini 2.5 Flash Lite (bbl)",
-      "intelligenceRank": 6,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1048576,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "bbl/gemini-3.0-flash",
-      "displayName": "Gemini 3.0 Flash (bbl)",
-      "intelligenceRank": 6,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1048576,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "bbl/gemini-3.1-flash-lite",
-      "displayName": "Gemini 3.1 Flash Lite (bbl)",
-      "intelligenceRank": 6,
-      "speedRank": 7,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1048576,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "bbl/gemini-3.5-flash",
-      "displayName": "Gemini 3.5 Flash (bbl)",
-      "intelligenceRank": 6,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1048576,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "bbl/gpt-5.5-mini",
-      "displayName": "GPT-5.5 Mini (bbl)",
-      "intelligenceRank": 6,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 400000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "bbl/grok-4.1-fast-non-reasoning",
-      "displayName": "Grok 4.1 Fast (bbl)",
-      "intelligenceRank": 6,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "glm/glm-4.6",
-      "displayName": "GLM 4.6 (FreeTheAi)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "glm/glm-4.7",
-      "displayName": "GLM 4.7 (FreeTheAi)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "mim/mimo-v2.5",
-      "displayName": "MiMo v2.5 (mim)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "opc/deepseek-v4-flash-free",
-      "displayName": "DeepSeek V4 Flash Free (FreeTheAi)",
-      "intelligenceRank": 6,
-      "speedRank": 8,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "opc/mimo-v2.5-free",
-      "displayName": "MiMo v2.5 Free (FreeTheAi)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "vova/kimi-k2.5",
-      "displayName": "Kimi K2.5 (FreeTheAi)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "vova/mimo-v2.5",
-      "displayName": "MiMo v2.5 (FreeTheAi)",
-      "intelligenceRank": 6,
-      "speedRank": 5,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "vova/minimax-m2.7",
-      "displayName": "MiniMax M2.7 (FreeTheAi)",
-      "intelligenceRank": 6,
-      "speedRank": 3,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
     },
     {
       "platform": "g4f",
@@ -1497,33 +848,6 @@
       ]
     },
     {
-      "platform": "opencode",
-      "modelId": "north-mini-code-free",
-      "displayName": "North Mini Code Free (OpenCode Zen)",
-      "intelligenceRank": 6,
-      "speedRank": 4,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 20,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~500M",
-      "contextWindow": 256000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "zen-promo-roster",
-          "title": "Limited-time promo, roster rotates",
-          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
       "platform": "openrouter",
       "modelId": "openai/gpt-oss-120b:free",
       "displayName": "GPT-OSS 120B (free)",
@@ -1545,40 +869,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "gpt-oss-120b",
-      "displayName": "GPT-OSS 120B (OVH)",
-      "intelligenceRank": 6,
-      "speedRank": 9,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1596,7 +887,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 10M tok/mo (claimed)",
+      "monthlyTokenBudget": "free · 10M tok/mo (claimed)",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -1649,146 +940,6 @@
           "severity": "info"
         }
       ]
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "glm/glm-5.1",
-      "displayName": "GLM 5.1 (FreeTheAi)",
-      "intelligenceRank": 7,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 200000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "kai/nvidia/nemotron-3-super-120b-a12b:free",
-      "displayName": "Nemotron 3 Super 120B (FreeTheAi)",
-      "intelligenceRank": 7,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "mim/mimo-v2.5-pro",
-      "displayName": "MiMo v2.5 Pro (mim)",
-      "intelligenceRank": 7,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "min/minimax-m3",
-      "displayName": "MiniMax M3 (FreeTheAi)",
-      "intelligenceRank": 7,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "vova/kimi-k2.7-code",
-      "displayName": "Kimi K2.7 Coder (FreeTheAi)",
-      "intelligenceRank": 7,
-      "speedRank": 5,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "vova/mimo-v2.5-pro",
-      "displayName": "MiMo v2.5 Pro (FreeTheAi)",
-      "intelligenceRank": 7,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "vova/mimo-v2.5-pro-ultraspeed",
-      "displayName": "MiMo v2.5 Pro UltraSpeed (FreeTheAi)",
-      "intelligenceRank": 7,
-      "speedRank": 8,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
     },
     {
       "platform": "g4f",
@@ -1904,11 +1055,11 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ],
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP (trial)",
+      "monthlyTokenBudget": "free · 200/hr per IP (trial)",
       "enabled": true,
       "limits": {
         "rpm": null,
@@ -1945,7 +1096,7 @@
         {
           "slug": "zen-serves-ultra-fast",
           "title": "Zen serves the 550B fast",
-          "body": "OpenCode Zen serves nemotron-3-ultra in ~2s with working tool calls where the OpenRouter route hangs \u2014 the live-verified path for this model.",
+          "body": "OpenCode Zen serves nemotron-3-ultra in ~2s with working tool calls where the OpenRouter route hangs — the live-verified path for this model.",
           "severity": "info"
         }
       ]
@@ -1972,7 +1123,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -1990,7 +1141,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 10M tok/mo (claimed)",
+      "monthlyTokenBudget": "free · 10M tok/mo (claimed)",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -2010,90 +1161,10 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 auto route",
+      "monthlyTokenBudget": "free · auto route",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "glm/glm-5.2",
-      "displayName": "GLM 5.2 (FreeTheAi)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 200000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "kai/openrouter/free",
-      "displayName": "Nemotron 3 Ultra (FreeTheAi)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "olm/deepseek-v4-pro",
-      "displayName": "DeepSeek V4 Pro (FreeTheAi)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "freetheai",
-      "modelId": "vova/gpt-5.5",
-      "displayName": "GPT-5.5 (FreeTheAi)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 10,
-        "rpd": 250,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~10M",
-      "contextWindow": 400000,
-      "enabled": true,
-      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
@@ -2244,8 +1315,8 @@
         },
         {
           "slug": "zen-ox-alpha-go-roster",
-          "title": "Zen GO roster \u2014 needs an OpenCode Go key",
-          "body": "Ox Alpha Free is served from the OpenCode Go (lite) roster at /zen/go/v1, not the anonymous /zen/v1 free tier: the anon endpoint 401s with \"Model ox-alpha-free is not supported\" while /zen/go/v1 answers but requires a Go subscription key (token price is $0). Live-verified 2026-08-22. It will not route through the keyless anonymous pool \u2014 use a keyed opencode key.",
+          "title": "Zen GO roster — needs an OpenCode Go key",
+          "body": "Ox Alpha Free is served from the OpenCode Go (lite) roster at /zen/go/v1, not the anonymous /zen/v1 free tier: the anon endpoint 401s with \"Model ox-alpha-free is not supported\" while /zen/go/v1 answers but requires a Go subscription key (token price is $0). Live-verified 2026-08-22. It will not route through the keyless anonymous pool — use a keyed opencode key.",
           "severity": "warning"
         }
       ]
@@ -2384,7 +1455,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -2465,7 +1536,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 ~5 rpm \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · ~5 rpm · 200 rpd",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -2485,7 +1556,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 10M tok/mo (claimed)",
+      "monthlyTokenBudget": "free · 10M tok/mo (claimed)",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -2520,33 +1591,6 @@
       ]
     },
     {
-      "platform": "nvidia",
-      "modelId": "meta/llama-4-maverick-17b-128e-instruct",
-      "displayName": "Llama 4 Maverick (NV)",
-      "intelligenceRank": 11,
-      "speedRank": 6,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 40,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "nvidia-rate-limited",
-          "title": "Recurring free, 40 RPM, eval-only ToS",
-          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
       "platform": "routeway",
       "modelId": "nemotron-3-nano-30b-a3b:free",
       "displayName": "Nemotron 3 Nano 30B A3B (Routeway free)",
@@ -2559,7 +1603,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 ~5 rpm \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · ~5 rpm · 200 rpd",
       "contextWindow": 256000,
       "enabled": true,
       "supportsVision": false,
@@ -2614,26 +1658,6 @@
       "quirks": []
     },
     {
-      "platform": "groq",
-      "modelId": "meta-llama/llama-4-scout-17b-16e-instruct",
-      "displayName": "Llama 4 Scout",
-      "intelligenceRank": 12,
-      "speedRank": 2,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 30,
-        "rpd": 1000,
-        "tpm": 30000,
-        "tpd": 1000000
-      },
-      "monthlyTokenBudget": "~30M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
       "platform": "reka",
       "modelId": "reka-flash",
       "displayName": "Reka Flash",
@@ -2666,7 +1690,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -2714,33 +1738,6 @@
       ]
     },
     {
-      "platform": "kilo",
-      "modelId": "poolside/laguna-m.1:free",
-      "displayName": "Poolside Laguna M.1 (Kilo)",
-      "intelligenceRank": 13,
-      "speedRank": 8,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": null,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": [
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
       "platform": "nvidia",
       "modelId": "stepfun-ai/step-3.7-flash",
       "displayName": "Step 3.7 Flash (NV)",
@@ -2753,7 +1750,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 65536,
       "enabled": true,
       "supportsVision": false,
@@ -2763,33 +1760,6 @@
           "slug": "nvidia-rate-limited",
           "title": "Recurring free, 40 RPM, eval-only ToS",
           "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "openrouter",
-      "modelId": "poolside/laguna-m.1:free",
-      "displayName": "Poolside Laguna M.1 (free)",
-      "intelligenceRank": 13,
-      "speedRank": 9,
-      "sizeLabel": "Large",
-      "limits": {
-        "rpm": 20,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~6M",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "or-free-cap-account-wide",
-          "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -2807,7 +1777,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 10M tok/mo (claimed)",
+      "monthlyTokenBudget": "free · 10M tok/mo (claimed)",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -2827,7 +1797,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
+      "monthlyTokenBudget": "free · 200/hr per IP",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -2836,7 +1806,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -2929,45 +1899,6 @@
       ]
     },
     {
-      "platform": "ovh",
-      "modelId": "gpt-oss-20b",
-      "displayName": "GPT-OSS 20B (OVH)",
-      "intelligenceRank": 14,
-      "speedRank": 10,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        },
-        {
-          "slug": "reasoning-token-room",
-          "title": "Needs token room",
-          "body": "Some free routes spend hidden reasoning tokens before visible output. Avoid tiny max_tokens values or requests can finish by length with empty content.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
       "platform": "routeway",
       "modelId": "gemma-4-31b-it:free",
       "displayName": "Gemma 4 31B (RW free)",
@@ -2980,7 +1911,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 262144,
       "enabled": false,
       "supportsVision": true,
@@ -3034,7 +1965,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         },
         {
@@ -3050,7 +1981,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
+      "monthlyTokenBudget": "free · 200/hr per IP",
       "enabled": true
     },
     {
@@ -3075,7 +2006,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -3133,7 +2064,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -3166,7 +2097,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 promo $0/token",
+      "monthlyTokenBudget": "free · promo $0/token",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": true,
@@ -3202,26 +2133,6 @@
     },
     {
       "platform": "groq",
-      "modelId": "llama-3.3-70b-versatile",
-      "displayName": "Llama 3.3 70B",
-      "intelligenceRank": 17,
-      "speedRank": 2,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 30,
-        "rpd": 1000,
-        "tpm": 12000,
-        "tpd": 100000
-      },
-      "monthlyTokenBudget": "~15M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "groq",
       "modelId": "qwen/qwen3.6-27b",
       "displayName": "Qwen3.6 27B (Groq)",
       "intelligenceRank": 17,
@@ -3253,7 +2164,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -3280,7 +2191,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -3316,7 +2227,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -3343,40 +2254,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Meta-Llama-3_3-70B-Instruct",
-      "displayName": "Llama 3.3 70B (OVH)",
-      "intelligenceRank": 17,
-      "speedRank": 9,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -3394,7 +2272,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -3421,7 +2299,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 256000,
       "enabled": true,
       "supportsVision": false,
@@ -3562,7 +2440,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         },
         {
@@ -3578,7 +2456,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
+      "monthlyTokenBudget": "free · 200/hr per IP",
       "enabled": true
     },
     {
@@ -3595,7 +2473,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ],
@@ -3605,7 +2483,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
+      "monthlyTokenBudget": "free · 200/hr per IP",
       "enabled": true
     },
     {
@@ -3650,7 +2528,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -3677,13 +2555,13 @@
         {
           "slug": "pollinations-degraded",
           "title": "Publishable key uses recurring shared capacity",
-          "body": "Pollinations chat uses https://gen.pollinations.ai/v1 with a free API key. Free capacity is quest pollen earned through tasks on enter.pollinations.ai \u2014 it no longer auto-refills per IP; the legacy text host is retired.",
+          "body": "Pollinations chat uses https://gen.pollinations.ai/v1 with a free API key. Free capacity is quest pollen earned through tasks on enter.pollinations.ai — it no longer auto-refills per IP; the legacy text host is retired.",
           "severity": "warning"
         },
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -3701,7 +2579,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 128000,
       "enabled": true,
       "supportsVision": false,
@@ -3776,26 +2654,6 @@
       "quirks": []
     },
     {
-      "platform": "groq",
-      "modelId": "qwen/qwen3-32b",
-      "displayName": "Qwen3 32B (Groq)",
-      "intelligenceRank": 19,
-      "speedRank": 2,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 60,
-        "rpd": 1000,
-        "tpm": 6000,
-        "tpd": 500000
-      },
-      "monthlyTokenBudget": "~15M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
       "platform": "nvidia",
       "modelId": "google/gemma-4-31b-it",
       "displayName": "Gemma 4 31B (NV)",
@@ -3808,7 +2666,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -3844,40 +2702,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Qwen3-Coder-30B-A3B-Instruct",
-      "displayName": "Qwen3-Coder 30B (OVH)",
-      "intelligenceRank": 19,
-      "speedRank": 9,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 262144,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -3895,7 +2720,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -4043,7 +2868,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ],
@@ -4053,7 +2878,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP",
+      "monthlyTokenBudget": "free · 200/hr per IP",
       "enabled": true
     },
     {
@@ -4098,7 +2923,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4199,7 +3024,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ]
@@ -4217,7 +3042,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -4244,7 +3069,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -4300,7 +3125,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4327,7 +3152,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4345,7 +3170,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 16384,
       "enabled": true,
       "supportsVision": false,
@@ -4393,11 +3218,11 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         }
       ],
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP (trial)",
+      "monthlyTokenBudget": "free · 200/hr per IP (trial)",
       "enabled": true,
       "limits": {
         "rpm": null,
@@ -4428,7 +3253,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4455,7 +3280,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4522,7 +3347,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4540,7 +3365,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 16384,
       "enabled": true,
       "supportsVision": false,
@@ -4596,7 +3421,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4623,7 +3448,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         },
         {
@@ -4656,7 +3481,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4695,26 +3520,6 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~1-2M",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": []
-    },
-    {
-      "platform": "groq",
-      "modelId": "llama-3.1-8b-instant",
-      "displayName": "Llama 3.1 8B Instant",
-      "intelligenceRank": 28,
-      "speedRank": 2,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 30,
-        "rpd": 14400,
-        "tpm": 6000,
-        "tpd": 500000
-      },
-      "monthlyTokenBudget": "~15M",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -4763,7 +3568,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4781,7 +3586,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 5 RPM / 200 RPD shared",
+      "monthlyTokenBudget": "free · 5 RPM / 200 RPD shared",
       "contextWindow": 16384,
       "enabled": true,
       "supportsVision": false,
@@ -4864,7 +3669,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4891,7 +3696,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4918,7 +3723,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -4937,7 +3742,7 @@
         {
           "slug": "keyless-anonymous",
           "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+          "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
           "severity": "info"
         },
         {
@@ -4947,7 +3752,7 @@
           "severity": "info"
         }
       ],
-      "monthlyTokenBudget": "free \u00b7 200/hr per IP (trial)",
+      "monthlyTokenBudget": "free · 200/hr per IP (trial)",
       "enabled": true,
       "limits": {
         "rpm": null,
@@ -4978,7 +3783,7 @@
         {
           "slug": "or-free-cap-account-wide",
           "title": "Daily :free cap is account-wide",
-          "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+          "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
           "severity": "info"
         }
       ]
@@ -5177,7 +3982,7 @@
         "tpm": null,
         "tpd": 7000000
       },
-      "monthlyTokenBudget": "free \u00b7 7M/day shared",
+      "monthlyTokenBudget": "free · 7M/day shared",
       "contextWindow": 252000,
       "enabled": true,
       "supportsVision": false,
@@ -5204,7 +4009,7 @@
         "tpm": null,
         "tpd": 7000000
       },
-      "monthlyTokenBudget": "free \u00b7 7M/day shared",
+      "monthlyTokenBudget": "free · 7M/day shared",
       "contextWindow": 256000,
       "enabled": true,
       "supportsVision": true,
@@ -5339,300 +4144,6 @@
       "quirks": []
     },
     {
-      "platform": "ovh",
-      "modelId": "Qwen3-32B",
-      "displayName": "Qwen3 32B (OVH)",
-      "intelligenceRank": 19,
-      "speedRank": 9,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        },
-        {
-          "slug": "ovh-qwen-think-trace",
-          "title": "May emit thinking trace",
-          "body": "OVH Qwen reasoning routes can include <think> blocks or reasoning prose. Strip or suppress the thinking trace when a plain answer is required.",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Qwen3.6-27B",
-      "displayName": "Qwen3.6 27B (OVH)",
-      "intelligenceRank": 17,
-      "speedRank": 9,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        },
-        {
-          "slug": "ovh-qwen-think-trace",
-          "title": "May emit thinking trace",
-          "body": "OVH Qwen reasoning routes can include <think> blocks or reasoning prose. Strip or suppress the thinking trace when a plain answer is required.",
-          "severity": "warning"
-        },
-        {
-          "slug": "reasoning-token-room",
-          "title": "Needs token room",
-          "body": "Some free routes spend hidden reasoning tokens before visible output. Avoid tiny max_tokens values or requests can finish by length with empty content.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Qwen2.5-VL-72B-Instruct",
-      "displayName": "Qwen2.5 VL 72B (OVH)",
-      "intelligenceRank": 21,
-      "speedRank": 9,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 32768,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": false,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Mistral-Small-3.2-24B-Instruct-2506",
-      "displayName": "Mistral Small 3.2 24B (OVH)",
-      "intelligenceRank": 23,
-      "speedRank": 9,
-      "sizeLabel": "Medium",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 131072,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Mistral-Nemo-Instruct-2407",
-      "displayName": "Mistral Nemo (OVH)",
-      "intelligenceRank": 28,
-      "speedRank": 9,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 128000,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Mistral-7B-Instruct-v0.3",
-      "displayName": "Mistral 7B Instruct v0.3 (OVH)",
-      "intelligenceRank": 31,
-      "speedRank": 9,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 65536,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Qwen3Guard-Gen-8B",
-      "displayName": "Qwen3Guard Gen 8B (OVH safety)",
-      "intelligenceRank": 31,
-      "speedRank": 9,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 32768,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        },
-        {
-          "slug": "safety-classifier-output",
-          "title": "Safety classifier output",
-          "body": "This route returns moderation/safety labels rather than normal assistant prose. Use it as a guardrail model, not a primary chat model.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
-      "platform": "ovh",
-      "modelId": "Qwen3Guard-Gen-0.6B",
-      "displayName": "Qwen3Guard Gen 0.6B (OVH safety)",
-      "intelligenceRank": 31,
-      "speedRank": 9,
-      "sizeLabel": "Small",
-      "limits": {
-        "rpm": 2,
-        "rpd": null,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "free \u00b7 2/min per IP",
-      "contextWindow": 32768,
-      "enabled": true,
-      "supportsVision": false,
-      "supportsTools": false,
-      "quirks": [
-        {
-          "slug": "ovh-anon-trickle",
-          "title": "Anonymous tier is 2 req/min",
-          "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-          "severity": "warning"
-        },
-        {
-          "slug": "keyless-anonymous",
-          "title": "No API key required",
-          "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
-          "severity": "info"
-        },
-        {
-          "slug": "safety-classifier-output",
-          "title": "Safety classifier output",
-          "body": "This route returns moderation/safety labels rather than normal assistant prose. Use it as a guardrail model, not a primary chat model.",
-          "severity": "info"
-        }
-      ]
-    },
-    {
       "platform": "nvidia",
       "modelId": "nvidia/nemotron-nano-12b-v2-vl",
       "displayName": "Nemotron Nano 12B VL (NV)",
@@ -5645,7 +4156,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 40 RPM",
+      "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 128000,
       "enabled": true,
       "supportsVision": true,
@@ -5672,7 +4183,7 @@
         "tpm": 20000,
         "tpd": 20000
       },
-      "monthlyTokenBudget": "free \u00b7 20k tok/day",
+      "monthlyTokenBudget": "free · 20k tok/day",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -5692,7 +4203,7 @@
         "tpm": 20000,
         "tpd": 20000
       },
-      "monthlyTokenBudget": "free \u00b7 20k tok/day",
+      "monthlyTokenBudget": "free · 20k tok/day",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -5712,7 +4223,7 @@
         "tpm": 20000,
         "tpd": 20000
       },
-      "monthlyTokenBudget": "free \u00b7 20k tok/day",
+      "monthlyTokenBudget": "free · 20k tok/day",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -5732,7 +4243,7 @@
         "tpm": 20000,
         "tpd": 20000
       },
-      "monthlyTokenBudget": "free \u00b7 20k tok/day",
+      "monthlyTokenBudget": "free · 20k tok/day",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": false,
@@ -5752,7 +4263,7 @@
         "tpm": 20000,
         "tpd": 20000
       },
-      "monthlyTokenBudget": "free \u00b7 20k tok/day",
+      "monthlyTokenBudget": "free · 20k tok/day",
       "contextWindow": 32768,
       "enabled": true,
       "supportsVision": false,
@@ -5772,7 +4283,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · 200 rpd",
       "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
@@ -5792,7 +4303,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · 200 rpd",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -5819,7 +4330,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · 200 rpd",
       "contextWindow": 32768,
       "enabled": true,
       "supportsVision": false,
@@ -5846,7 +4357,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · 200 rpd",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": true,
@@ -5866,7 +4377,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · 200 rpd",
       "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
@@ -5886,7 +4397,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · 200 rpd",
       "contextWindow": 262144,
       "enabled": true,
       "supportsVision": false,
@@ -5906,7 +4417,7 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · 200 rpd",
       "contextWindow": 131072,
       "enabled": true,
       "supportsVision": true,
@@ -5933,12 +4444,51 @@
         "tpm": null,
         "tpd": null
       },
-      "monthlyTokenBudget": "free \u00b7 ~5 rpm \u00b7 200 rpd",
+      "monthlyTokenBudget": "free · ~5 rpm · 200 rpd",
       "contextWindow": 256000,
       "enabled": true,
       "supportsVision": true,
       "supportsTools": true,
       "quirks": []
+    },
+    {
+      "platform": "opencode",
+      "modelId": "nemotron-3.5-lightning-free",
+      "displayName": "Nemotron 3.5 Lightning Free (OpenCode Zen)",
+      "intelligenceRank": 6,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 20,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~500M",
+      "contextWindow": 1000000,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning",
+          "targets": [
+            {
+              "platform": "opencode",
+              "modelGlob": null
+            }
+          ]
+        },
+        {
+          "slug": "zen-lightning-live",
+          "title": "Live-verified on the anon tier",
+          "body": "nemotron-3.5-lightning-free appeared in the /zen/v1 roster during the 2026-08-22 rotation (replacing north-mini-code and ling-3.0-flash) and answers 200 keyless on the anonymous tier. Context window is unconfirmed upstream; mirrored from nemotron-3-ultra-free until measured.",
+          "severity": "info"
+        }
+      ]
     }
   ],
   "quirks": [
@@ -5951,18 +4501,6 @@
         {
           "platform": "agnes",
           "modelGlob": null
-        }
-      ]
-    },
-    {
-      "slug": "agnes-video-not-routed",
-      "title": "agnes-video-v2.0 not yet routed",
-      "body": "Agnes exposes agnes-video-v2.0 (text-to-video, image-to-video, multi-image, keyframes) at POST /v1/videos with an async task model returning video_id. This gateway does not yet ship a video adapter, so the model is intentionally not in the catalog. Use the direct endpoint at apihub.agnes-ai.com/v1/videos until the video route lands.",
-      "severity": "info",
-      "targets": [
-        {
-          "platform": "agnes",
-          "modelGlob": "*video*"
         }
       ]
     },
@@ -5987,18 +4525,6 @@
         {
           "platform": "aihorde",
           "modelGlob": null
-        }
-      ]
-    },
-    {
-      "slug": "aihorde-behemoth-slow",
-      "title": "123B has heavy queue (seeded disabled)",
-      "body": "Behemoth-X-123B has deep queue depth (50s+ ETA even on trivial prompts). Seeded disabled; enable only if minute-scale latency is acceptable.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "aihorde",
-          "modelGlob": "*Behemoth-X-123B*"
         }
       ]
     },
@@ -6111,21 +4637,9 @@
       ]
     },
     {
-      "slug": "hy3-limited-free",
-      "title": "Free route can change",
-      "body": "Tencent Hy3 is currently free on these routes, but provider announcements describe some access as limited-time promotional availability. Monitor before aging into the monthly catalog.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "requesty",
-          "modelGlob": "novita/tencent/hy3"
-        }
-      ]
-    },
-    {
       "slug": "keyless-anonymous",
       "title": "No API key required",
-      "body": "Routes anonymously \u2014 the catalog ships a keyless sentinel row and calls work with no account or key.",
+      "body": "Routes anonymously — the catalog ships a keyless sentinel row and calls work with no account or key.",
       "severity": "info",
       "targets": [
         {
@@ -6134,10 +4648,6 @@
         },
         {
           "platform": "llm7",
-          "modelGlob": null
-        },
-        {
-          "platform": "ovh",
           "modelGlob": null
         }
       ]
@@ -6151,18 +4661,6 @@
         {
           "platform": "kilo",
           "modelGlob": "kilo-auto/free"
-        }
-      ]
-    },
-    {
-      "slug": "modelscope-aliyun-binding",
-      "title": "Requires Alibaba Cloud (China) account binding",
-      "body": "Free, but requires binding your ModelScope account to an Alibaba Cloud CHINA-site (cn) account with Chinese real-name verification \u2014 international (alibabacloud.com) accounts do not qualify (maintainer-confirmed). The API token mints without the binding, but every call then fails with `401 please bind your alibaba cloud account before use`.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "modelscope",
-          "modelGlob": null
         }
       ]
     },
@@ -6205,7 +4703,7 @@
     {
       "slug": "or-free-cap-account-wide",
       "title": "Daily :free cap is account-wide",
-      "body": "OpenRouter\u2019s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router\u2019s cooldown handling absorbs the shared 429s.",
+      "body": "OpenRouter’s :free daily cap (50/day, or 1000/day once you have ever bought $10 of credits) is shared across ALL :free models on the account, not per model. Per-row rpd values here are therefore optimistic; the router’s cooldown handling absorbs the shared 429s.",
       "severity": "info",
       "targets": [
         {
@@ -6227,33 +4725,9 @@
       ]
     },
     {
-      "slug": "ovh-anon-trickle",
-      "title": "Anonymous tier is 2 req/min",
-      "body": "OVH AI Endpoints anonymous mode is documented at 2 req/min per IP per model (observed even stricter across models). The 400 req/min authenticated tier requires a Public Cloud project with a payment method, so the catalog ships the keyless path. Treat as a breadth/fallback tier, not a throughput tier.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "ovh",
-          "modelGlob": null
-        }
-      ]
-    },
-    {
-      "slug": "ovh-qwen-think-trace",
-      "title": "May emit thinking trace",
-      "body": "OVH Qwen reasoning routes can include <think> blocks or reasoning prose. Strip or suppress the thinking trace when a plain answer is required.",
-      "severity": "warning",
-      "targets": [
-        {
-          "platform": "ovh",
-          "modelGlob": "Qwen3*"
-        }
-      ]
-    },
-    {
       "slug": "pollinations-degraded",
       "title": "Publishable key uses recurring shared capacity",
-      "body": "Pollinations chat uses https://gen.pollinations.ai/v1 with a free API key. Free capacity is quest pollen earned through tasks on enter.pollinations.ai \u2014 it no longer auto-refills per IP; the legacy text host is retired.",
+      "body": "Pollinations chat uses https://gen.pollinations.ai/v1 with a free API key. Free capacity is quest pollen earned through tasks on enter.pollinations.ai — it no longer auto-refills per IP; the legacy text host is retired.",
       "severity": "warning",
       "targets": [
         {
@@ -6279,14 +4753,6 @@
         {
           "platform": "cloudflare",
           "modelGlob": "@cf/openai/gpt-oss-*"
-        },
-        {
-          "platform": "ovh",
-          "modelGlob": "gpt-oss-20b"
-        },
-        {
-          "platform": "ovh",
-          "modelGlob": "Qwen3.6-27B"
         },
         {
           "platform": "requesty",
@@ -6357,36 +4823,8 @@
           "modelGlob": "*content-safety*"
         },
         {
-          "platform": "ovh",
-          "modelGlob": "Qwen3Guard-*"
-        },
-        {
           "platform": "requesty",
           "modelGlob": "nvidia/nemotron-3.5-content-safety"
-        }
-      ]
-    },
-    {
-      "slug": "siliconflow-intl",
-      "title": "Use the .com international endpoint",
-      "body": "SiliconFlow's free models are reachable with no credit card via the international site (cloud.siliconflow.com, base https://api.siliconflow.com/v1). The .cn site requires Chinese real-name verification; the .com site does not.",
-      "severity": "info",
-      "targets": [
-        {
-          "platform": "siliconflow",
-          "modelGlob": null
-        }
-      ]
-    },
-    {
-      "slug": "zen-deepseek-v4-0731",
-      "title": "Zen serves DeepSeek-V4-Flash-0731 in place",
-      "body": "OpenCode Zen upgraded the deepseek-v4-flash-free alias in place to the official DeepSeek-V4-Flash-0731 build (post-training release, 2026-07-31; same model id, ~200K context on the free tier). Live-verified 2026-08-05: the endpoint answers; the served checkpoint may still self-identify as an older build during the gateway rollout.",
-      "severity": "info",
-      "targets": [
-        {
-          "platform": "opencode",
-          "modelGlob": "deepseek-v4-flash-free"
         }
       ]
     },
@@ -6405,7 +4843,7 @@
     {
       "slug": "zen-serves-ultra-fast",
       "title": "Zen serves the 550B fast",
-      "body": "OpenCode Zen serves nemotron-3-ultra in ~2s with working tool calls where the OpenRouter route hangs \u2014 the live-verified path for this model.",
+      "body": "OpenCode Zen serves nemotron-3-ultra in ~2s with working tool calls where the OpenRouter route hangs — the live-verified path for this model.",
       "severity": "info",
       "targets": [
         {
@@ -6429,7 +4867,7 @@
     {
       "slug": "modal-endpoint-key",
       "title": "Per-endpoint URL + proxy token, dollar-metered",
-      "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-\u2026.ws-\u2026 from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
+      "body": "Modal keys carry their shared-endpoint URL (https://<workspace>--ep-<name>.<region>.modal.direct/v1) plus a workspace proxy token (wk-….ws-… from modal.com/settings/proxy-auth-tokens). Usage meters in dollars against a per-key rolling 30-day budget ($30 default, editable) instead of RPM/RPD limits.",
       "severity": "info",
       "targets": [
         {
@@ -6441,24 +4879,12 @@
     {
       "slug": "zen-ox-alpha-wire-id",
       "title": "Wire id is x-preview-f-free, not ox-alpha-free",
-      "body": "Ox Alpha Free's upstream model id on OpenCode Zen is x-preview-f-free; the anon /zen/v1 free tier serves it directly (live-verified 2026-08-22: 200 with no key, model self-identifies as ox-alpha). Requesting the marketing name ox-alpha-free 401s with \"Model ox-alpha-free is not supported\" \u2014 earlier notes claiming it needs a Go subscription at /zen/go/v1 were wrong; the model moved to the anonymous roster. Clients must use the wire id.",
+      "body": "Ox Alpha Free's upstream model id on OpenCode Zen is x-preview-f-free; the anon /zen/v1 free tier serves it directly (live-verified 2026-08-22: 200 with no key, model self-identifies as ox-alpha). Requesting the marketing name ox-alpha-free 401s with \"Model ox-alpha-free is not supported\" — earlier notes claiming it needs a Go subscription at /zen/go/v1 were wrong; the model moved to the anonymous roster. Clients must use the wire id.",
       "severity": "info",
       "targets": [
         {
           "platform": "opencode",
           "modelGlob": "x-preview-f-free"
-        }
-      ]
-    },
-    {
-      "slug": "zen-muse-contributor",
-      "title": "Contributor tier, hidden reasoning tokens",
-      "body": "Muse Spark 1.2 free is served as the contributor roster alias muse-spark-1.2-contributor-free (paid muse-spark-1.2 also exists on Zen) and self-identifies as a Meta model. It burns hidden reasoning tokens before visible output (300+ completion tokens observed for a one-line answer), so avoid tiny max_tokens values or replies can finish by length with empty content.",
-      "severity": "info",
-      "targets": [
-        {
-          "platform": "opencode",
-          "modelGlob": "muse-spark-*"
         }
       ]
     }
