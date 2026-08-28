@@ -1,11 +1,11 @@
 {
   "version": "2026.08.26.2",
-  "generatedAt": "2026-08-26T12:30:56.398Z",
+  "generatedAt": "2026-08-28T09:14:02.323Z",
   "tier": "live",
   "counts": {
     "platforms": 27,
-    "models": 181,
-    "enabledModels": 179,
+    "models": 180,
+    "enabledModels": 178,
     "embeddings": 0,
     "enabledEmbeddings": 0,
     "transcriptionModels": 0,
@@ -554,7 +554,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 262144,
+      "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -834,7 +834,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 200000,
+      "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1082,7 +1082,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1289,39 +1289,6 @@
       "quirks": []
     },
     {
-      "platform": "opencode",
-      "modelId": "x-preview-f-free",
-      "displayName": "Ox Alpha Free (OpenCode Zen)",
-      "intelligenceRank": 8,
-      "speedRank": 4,
-      "sizeLabel": "Frontier",
-      "limits": {
-        "rpm": 20,
-        "rpd": 200,
-        "tpm": null,
-        "tpd": null
-      },
-      "monthlyTokenBudget": "~500M",
-      "contextWindow": 1000000,
-      "enabled": true,
-      "supportsVision": true,
-      "supportsTools": true,
-      "quirks": [
-        {
-          "slug": "zen-promo-roster",
-          "title": "Limited-time promo, roster rotates",
-          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
-          "severity": "warning"
-        },
-        {
-          "slug": "zen-ox-alpha-go-roster",
-          "title": "Zen GO roster — needs an OpenCode Go key",
-          "body": "Ox Alpha Free is served from the OpenCode Go (lite) roster at /zen/go/v1, not the anonymous /zen/v1 free tier: the anon endpoint 401s with \"Model ox-alpha-free is not supported\" while /zen/go/v1 answers but requires a Go subscription key (token price is $0). Live-verified 2026-08-22. It will not route through the keyless anonymous pool — use a keyed opencode key.",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
       "platform": "agnes",
       "modelId": "agnes-1.5-flash",
       "displayName": "Agnes 1.5 Flash",
@@ -1510,7 +1477,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 204800,
+      "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
@@ -1885,7 +1852,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 204800,
+      "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": true,
       "supportsTools": true,
@@ -4465,7 +4432,7 @@
         "tpd": null
       },
       "monthlyTokenBudget": "~500M",
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "enabled": true,
       "supportsVision": false,
       "supportsTools": true,
