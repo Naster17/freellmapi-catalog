@@ -1,6 +1,6 @@
 {
-  "version": "2026.08.29.1",
-  "generatedAt": "2026-08-29T13:09:18.076Z",
+  "version": "2026.08.29.2",
+  "generatedAt": "2026-08-29T13:26:44.982Z",
   "tier": "live",
   "counts": {
     "platforms": 27,
@@ -1926,15 +1926,15 @@
       "speedRank": 2,
       "sizeLabel": "Medium",
       "limits": {
-        "rpm": 60,
-        "rpd": 1000,
-        "tpm": 6000,
-        "tpd": 500000
+        "rpm": 1000,
+        "rpd": null,
+        "tpm": 8000,
+        "tpd": null
       },
-      "monthlyTokenBudget": "~15M",
-      "contextWindow": 131072,
+      "monthlyTokenBudget": "free · 1000 RPM / 8K TPM",
+      "contextWindow": 131042,
       "enabled": true,
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "quirks": []
     },
