@@ -1,11 +1,11 @@
 {
-  "version": "2026.08.29.2",
-  "generatedAt": "2026-08-29T13:26:44.982Z",
+  "version": "2026.09.03.3",
+  "generatedAt": "2026-09-03T16:48:06.957Z",
   "tier": "live",
   "counts": {
-    "platforms": 27,
-    "models": 181,
-    "enabledModels": 179,
+    "platforms": 28,
+    "models": 186,
+    "enabledModels": 178,
     "embeddings": 0,
     "enabledEmbeddings": 0,
     "transcriptionModels": 0,
@@ -25,12 +25,20 @@
       "name": "AINative Studio"
     },
     {
+      "id": "aion",
+      "name": "Aion Labs"
+    },
+    {
       "id": "bazaarlink",
       "name": "BazaarLink"
     },
     {
       "id": "cerebras",
       "name": "Cerebras"
+    },
+    {
+      "id": "cline",
+      "name": "Cline"
     },
     {
       "id": "cloudflare",
@@ -73,6 +81,14 @@
       "name": "Mistral"
     },
     {
+      "id": "modal",
+      "name": "Modal"
+    },
+    {
+      "id": "nara",
+      "name": "NaraRouter"
+    },
+    {
       "id": "nvidia",
       "name": "NVIDIA NIM"
     },
@@ -97,28 +113,16 @@
       "name": "Reka"
     },
     {
+      "id": "requesty",
+      "name": "Requesty"
+    },
+    {
       "id": "routeway",
       "name": "Routeway"
     },
     {
       "id": "zhipu",
       "name": "Zhipu AI"
-    },
-    {
-      "id": "nara",
-      "name": "NaraRouter"
-    },
-    {
-      "id": "aion",
-      "name": "Aion Labs"
-    },
-    {
-      "id": "requesty",
-      "name": "Requesty"
-    },
-    {
-      "id": "modal",
-      "name": "Modal"
     }
   ],
   "models": [
@@ -400,7 +404,7 @@
       },
       "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
-      "enabled": true,
+      "enabled": false,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
@@ -1424,7 +1428,7 @@
       },
       "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
-      "enabled": true,
+      "enabled": false,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
@@ -1719,7 +1723,7 @@
       },
       "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 65536,
-      "enabled": true,
+      "enabled": false,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
@@ -2153,7 +2157,7 @@
       },
       "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
-      "enabled": true,
+      "enabled": false,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
@@ -2180,7 +2184,7 @@
       },
       "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 131072,
-      "enabled": true,
+      "enabled": false,
       "supportsVision": false,
       "supportsTools": true,
       "quirks": [
@@ -4145,7 +4149,7 @@
       },
       "monthlyTokenBudget": "free · 40 RPM",
       "contextWindow": 128000,
-      "enabled": true,
+      "enabled": false,
       "supportsVision": true,
       "supportsTools": true,
       "quirks": [
@@ -4476,6 +4480,120 @@
           "severity": "info"
         }
       ]
+    },
+    {
+      "platform": "nvidia",
+      "modelId": "moonshotai/kimi-k3",
+      "displayName": "Kimi K3 (NV)",
+      "intelligenceRank": 2,
+      "speedRank": 9,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 40,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free · 40 RPM",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "nvidia-rate-limited",
+          "title": "Recurring free, 40 RPM, eval-only ToS",
+          "body": "NVIDIA NIM replaced its depleting trial credits with a recurring per-account rate limit (40 RPM default, varies by model), verified June 2026. The trial ToS still scopes usage to evaluation/prototyping, not production.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "cline",
+      "modelId": "z-ai/glm-5.3-flash",
+      "displayName": "GLM 5.3 Flash (Cline)",
+      "intelligenceRank": 6,
+      "speedRank": 3,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free promo (quota per account)",
+      "contextWindow": 1310720,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "cline-free-promo",
+          "title": "Free promo model — OAuth account required",
+          "body": "Routed through the Cline usage-billing gateway (api.cline.bot/api/v1) with an OAuth account token; no static API keys exist and anonymous calls 401 before model resolution. Billed $0 against a per-account free-promotion quota; Cline rotates free models without notice - a retired id fails with model-not-found.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "platform": "cline",
+      "modelId": "deepseek/deepseek-v4-flash",
+      "displayName": "DeepSeek V4 Flash (Cline)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free promo (quota per account)",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "cline",
+      "modelId": "cline-free/longcat-2.0",
+      "displayName": "LongCat 2.0 (Cline Free)",
+      "intelligenceRank": 8,
+      "speedRank": 6,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free promo (quota per account)",
+      "contextWindow": null,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
+    },
+    {
+      "platform": "cline",
+      "modelId": "poolside/laguna-s-2.1:free",
+      "displayName": "Laguna S 2.1 (Cline Free)",
+      "intelligenceRank": 7,
+      "speedRank": 5,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": null,
+        "rpd": null,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "free promo (quota per account)",
+      "contextWindow": 262144,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
+      "quirks": []
     }
   ],
   "quirks": [
