@@ -1,11 +1,11 @@
 {
-  "version": "2026.08.26.2",
-  "generatedAt": "2026-08-28T09:14:02.323Z",
+  "version": "2026.08.29.1",
+  "generatedAt": "2026-08-29T13:09:18.076Z",
   "tier": "live",
   "counts": {
     "platforms": 27,
-    "models": 180,
-    "enabledModels": 178,
+    "models": 181,
+    "enabledModels": 179,
     "embeddings": 0,
     "enabledEmbeddings": 0,
     "transcriptionModels": 0,
@@ -1916,6 +1916,26 @@
       "enabled": true,
       "supportsVision": true,
       "supportsTools": false,
+      "quirks": []
+    },
+    {
+      "platform": "groq",
+      "modelId": "qwen/qwen3.8-27b",
+      "displayName": "Qwen3.8 27B (Groq)",
+      "intelligenceRank": 16,
+      "speedRank": 2,
+      "sizeLabel": "Medium",
+      "limits": {
+        "rpm": 60,
+        "rpd": 1000,
+        "tpm": 6000,
+        "tpd": 500000
+      },
+      "monthlyTokenBudget": "~15M",
+      "contextWindow": 131072,
+      "enabled": true,
+      "supportsVision": false,
+      "supportsTools": true,
       "quirks": []
     },
     {
