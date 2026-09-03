@@ -1,6 +1,6 @@
 {
-  "version": "2026.09.03.4",
-  "generatedAt": "2026-09-03T19:01:05.401Z",
+  "version": "2026.09.03.7",
+  "generatedAt": "2026-09-03T19:49:29.759Z",
   "tier": "live",
   "counts": {
     "platforms": 28,
@@ -9,7 +9,7 @@
     "embeddings": 0,
     "enabledEmbeddings": 0,
     "transcriptionModels": 0,
-    "quirks": 31
+    "quirks": 32
   },
   "platforms": [
     {
@@ -4625,6 +4625,12 @@
           "title": "Meta Contributor tier — trains on your data",
           "body": "Heavily discounted/free token pricing in exchange for permission to use your prompts and completions to train future Meta models. Context window 1M, multimodal (text+image+file+audio+video in).",
           "severity": "warning"
+        },
+        {
+          "slug": "muse-xhigh-reasoning",
+          "title": "XHigh reasoning via reasoning effort, no separate id",
+          "body": "Zen lists no separate xhigh model id (live 2026-09-03 the roster holds only muse-spark-1.2, muse-spark-1.2-contributor-free and muse-spark-1.3-contributor-free; suffixed ids such as muse-spark-1.3-xhigh return ModelError not supported). Select max reasoning with reasoning_effort=xhigh on chat completions or reasoning.effort=xhigh on the Responses API (both live-verified). The desktop app variant=xhigh is app-side only and rejected as an unknown parameter on the API path. Note: the chat completions path currently 500s for these ids (upstream Zen bug, also reported with API keys); the Responses path answers.",
+          "severity": "info"
         }
       ]
     },
@@ -4658,6 +4664,12 @@
           "title": "Meta Contributor tier — trains on your data",
           "body": "Heavily discounted/free token pricing in exchange for permission to use your prompts and completions to train future Meta models. Context window 1M, multimodal (text+image+file+audio+video in).",
           "severity": "warning"
+        },
+        {
+          "slug": "muse-xhigh-reasoning",
+          "title": "XHigh reasoning via reasoning effort, no separate id",
+          "body": "Zen lists no separate xhigh model id (live 2026-09-03 the roster holds only muse-spark-1.2, muse-spark-1.2-contributor-free and muse-spark-1.3-contributor-free; suffixed ids such as muse-spark-1.3-xhigh return ModelError not supported). Select max reasoning with reasoning_effort=xhigh on chat completions or reasoning.effort=xhigh on the Responses API (both live-verified). The desktop app variant=xhigh is app-side only and rejected as an unknown parameter on the API path. Note: the chat completions path currently 500s for these ids (upstream Zen bug, also reported with API keys); the Responses path answers.",
+          "severity": "info"
         }
       ]
     }
@@ -5056,6 +5068,18 @@
         {
           "platform": "opencode",
           "modelGlob": "x-preview-f-free"
+        }
+      ]
+    },
+    {
+      "slug": "muse-xhigh-reasoning",
+      "title": "XHigh reasoning via reasoning effort, no separate id",
+      "body": "Zen lists no separate xhigh model id (live 2026-09-03 the roster holds only muse-spark-1.2, muse-spark-1.2-contributor-free and muse-spark-1.3-contributor-free; suffixed ids such as muse-spark-1.3-xhigh return ModelError not supported). Select max reasoning with reasoning_effort=xhigh on chat completions or reasoning.effort=xhigh on the Responses API (both live-verified). The desktop app variant=xhigh is app-side only and rejected as an unknown parameter on the API path. Note: the chat completions path currently 500s for these ids (upstream Zen bug, also reported with API keys); the Responses path answers.",
+      "severity": "info",
+      "targets": [
+        {
+          "platform": "opencode",
+          "modelGlob": "muse-spark-*"
         }
       ]
     }
