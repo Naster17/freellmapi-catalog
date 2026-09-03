@@ -1,11 +1,11 @@
 {
-  "version": "2026.09.03.3",
-  "generatedAt": "2026-09-03T16:48:06.957Z",
+  "version": "2026.09.03.4",
+  "generatedAt": "2026-09-03T19:01:05.401Z",
   "tier": "live",
   "counts": {
     "platforms": 28,
-    "models": 186,
-    "enabledModels": 178,
+    "models": 188,
+    "enabledModels": 180,
     "embeddings": 0,
     "enabledEmbeddings": 0,
     "transcriptionModels": 0,
@@ -4594,6 +4594,72 @@
       "supportsVision": false,
       "supportsTools": true,
       "quirks": []
+    },
+    {
+      "platform": "opencode",
+      "modelId": "muse-spark-1.3-contributor-free",
+      "displayName": "Muse Spark 1.3 Contributor Free (OpenCode Zen)",
+      "intelligenceRank": 7,
+      "speedRank": 4,
+      "sizeLabel": "Frontier",
+      "limits": {
+        "rpm": 20,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~500M",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        },
+        {
+          "slug": "meta-contributor-tier",
+          "title": "Meta Contributor tier — trains on your data",
+          "body": "Heavily discounted/free token pricing in exchange for permission to use your prompts and completions to train future Meta models. Context window 1M, multimodal (text+image+file+audio+video in).",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "platform": "opencode",
+      "modelId": "muse-spark-1.2-contributor-free",
+      "displayName": "Muse Spark 1.2 Contributor Free (OpenCode Zen)",
+      "intelligenceRank": 6,
+      "speedRank": 4,
+      "sizeLabel": "Large",
+      "limits": {
+        "rpm": 20,
+        "rpd": 200,
+        "tpm": null,
+        "tpd": null
+      },
+      "monthlyTokenBudget": "~500M",
+      "contextWindow": 1048576,
+      "enabled": true,
+      "supportsVision": true,
+      "supportsTools": true,
+      "quirks": [
+        {
+          "slug": "zen-promo-roster",
+          "title": "Limited-time promo, roster rotates",
+          "body": "OpenCode Zen free models are explicitly limited-time promotional access (\"available for a limited time\" per the docs), not a recurring quota. The roster rotates: qwen3.6-plus and minimax-m3 promos already ended. Expect any row here to die without notice; prompts/outputs may be used for model improvement.",
+          "severity": "warning"
+        },
+        {
+          "slug": "meta-contributor-tier",
+          "title": "Meta Contributor tier — trains on your data",
+          "body": "Heavily discounted/free token pricing in exchange for permission to use your prompts and completions to train future Meta models. Context window 1M, multimodal (text+image+file+audio+video in).",
+          "severity": "warning"
+        }
+      ]
     }
   ],
   "quirks": [
